@@ -12,28 +12,28 @@
     theme: {
       extend: {
         "colors": {
-                "secondary-container": "#ff73ae",
+                "secondary-container": "#FCE4EC",
                 "inverse-surface": "#303031",
-                "on-secondary-fixed-variant": "#890f50",
+                "on-secondary-fixed-variant": "#880E4F",
                 "tertiary": "#64535a",
-                "surface-container-high": "#eae7e8",
+                "surface-container-high": "#FCE4EC",
                 "error": "#ba1a1a",
-                "surface-container-highest": "#e5e2e3",
-                "on-surface": "#1b1b1c",
+                "surface-container-highest": "#FCE4EC",
+                "on-surface": "#3B0A25",
                 "error-container": "#ffdad6",
                 "on-secondary-container": "#740041",
-                "on-surface-variant": "#5a4044",
+                "on-surface-variant": "#6D3B52",
                 "on-tertiary-container": "#fff2f5",
                 "on-error-container": "#93000a",
-                "outline-variant": "#e3bdc3",
+                "outline-variant": "#FCE4EC",
                 "on-primary-fixed": "#3f0016",
                 "on-secondary": "#ffffff",
                 "inverse-primary": "#ffb2bf",
-                "on-primary-fixed-variant": "#90003b",
+                "on-primary-fixed-variant": "#880E4F",
                 "secondary-fixed": "#ffd9e4",
                 "surface-tint": "#bc004f",
-                "surface-bright": "#fcf8f9",
-                "surface-container": "#f0edee",
+                "surface-bright": "#FFF5F9",
+                "surface-container": "#FCE4EC",
                 "on-background": "#1b1b1c",
                 "on-tertiary-fixed": "#25181e",
                 "on-primary-container": "#fff2f3",
@@ -41,24 +41,24 @@
                 "on-error": "#ffffff",
                 "inverse-on-surface": "#f3f0f1",
                 "tertiary-container": "#7e6b72",
-                "surface": "#fcf8f9",
+                "surface": "#FFF5F9",
                 "tertiary-fixed-dim": "#d7c1c8",
-                "surface-container-low": "#f6f3f4",
+                "surface-container-low": "#FFF5F9",
                 "primary-fixed": "#ffd9de",
-                "background": "#fcf8f9",
-                "secondary": "#a82d68",
+                "background": "#FFF5F9",
+                "secondary": "#880E4F",
                 "surface-dim": "#dcd9da",
                 "surface-container-lowest": "#ffffff",
                 "on-tertiary": "#ffffff",
                 "primary-fixed-dim": "#ffb2bf",
                 "on-secondary-fixed": "#3e0020",
                 "on-tertiary-fixed-variant": "#524249",
-                "outline": "#8e6f74",
+                "outline": "#A07080",
                 "secondary-fixed-dim": "#ffb0cc",
                 "tertiary-fixed": "#f4dce4",
                 "on-primary": "#ffffff",
-                "primary": "#b0004a",
-                "primary-container": "#d81b60"
+                "primary": "#E91E8C",
+                "primary-container": "#E91E8C"
         },
         "borderRadius": {
                 "DEFAULT": "0.25rem",
@@ -177,6 +177,7 @@
         }
     </style>
 <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
 
@@ -190,66 +191,53 @@
     </div>
 </div>
 
-<!-- TopNavBar -->
-<nav class="sticky top-0 z-50 bg-surface shadow-sm">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
-<a class="font-display-lg text-headline-md md:text-headline-md font-bold text-primary shrink-0 whitespace-nowrap" href="index.html">Candy Catering</a>
-<div class="hidden md:flex gap-8">
-<a class="text-primary border-b-2 border-primary pb-1 font-label-bold text-label-bold hover:text-primary transition-colors scale-95 duration-200" href="index.html">Trang chủ</a>
-<a class="text-secondary font-label-bold text-label-bold hover:text-primary transition-colors scale-95 duration-200" href="services/index.html">Dịch vụ</a>
-<a class="text-secondary font-label-bold text-label-bold hover:text-primary transition-colors scale-95 duration-200" href="gallery/index.html">Thư viện</a>
-<a class="text-secondary font-label-bold text-label-bold hover:text-primary transition-colors scale-95 duration-200" href="pricing/index.html">Báo giá</a>
-<a class="text-secondary font-label-bold text-label-bold hover:text-primary transition-colors scale-95 duration-200" href="blog/index.html">Tin tức</a>
-<a class="text-secondary font-label-bold text-label-bold hover:text-primary transition-colors scale-95 duration-200" href="contact/index.html">Liên hệ</a>
-</div>
-<button class="hidden md:block bg-primary-container text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-full hover:brightness-95 transition-all">
-                Nhận báo giá
-            </button>
-<!-- Mobile Menu Toggle -->
-<button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
-<span class="material-symbols-outlined text-2xl">menu</span>
-</button>
-</div>
-</nav>
+<!-- Header Placeholder -->
+<div id="header-placeholder" data-transparent="true"></div>
 <main>
 <!-- Hero Section -->
-<section class="relative h-[819px] min-h-[600px] flex items-center justify-center overflow-hidden">
+<section class="relative min-h-screen flex items-center justify-start overflow-hidden">
 <div class="absolute inset-0 z-0">
     <div class="hero-slide active">
         <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-1.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 1">
-        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
         <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-2.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 2">
-        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
         <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-3.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 3">
-        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
         <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-4.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 4">
-        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
         <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-5.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 5">
-        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
         <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-6.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 6">
-        <div class="absolute inset-0 bg-black/35"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
 </div>
-<div class="relative z-10 text-center px-margin-mobile md:px-gutter max-w-3xl mx-auto glass-panel p-8 md:p-12 rounded-xl">
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 drop-shadow-md">Tiệc Tea Break &amp; Tiệc Ngọt Chuyên Nghiệp Tại Hà Nội</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl mx-auto drop-shadow-sm">Giải pháp hoàn hảo mang đến sự tinh tế và đẳng cấp cho mọi sự kiện, từ hội nghị doanh nghiệp đến những buổi tiệc ấm cúng.</p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter flex items-center pt-24 pb-12">
+<div class="max-w-2xl text-left text-white fade-in-left">
+<div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md text-secondary-fixed border border-white/20 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+    <span class="material-symbols-outlined text-xs text-secondary-fixed" data-weight="fill">star</span>
+    Tiệc Lưu Động Candy — Dịch Vụ Tiệc Bánh Trà Cao Cấp
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 drop-shadow-md">Tiệc Tea Break &amp; Tiệc Ngọt Chuyên Nghiệp Tại Hà Nội</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-8 max-w-xl drop-shadow-sm">Giải pháp hoàn hảo mang đến sự tinh tế và đẳng cấp cho mọi sự kiện, từ hội nghị doanh nghiệp đến những buổi tiệc ấm cúng.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-start">
 <button class="bg-primary-container text-on-primary font-label-bold text-label-bold px-8 py-4 rounded-full hover:bg-primary transition-colors shadow-lg shadow-primary-container/30">
                         Nhận báo giá
                     </button>
-<button class="bg-surface text-primary border border-primary-container font-label-bold text-label-bold px-8 py-4 rounded-full hover:bg-surface-container-low transition-colors">
+<button class="bg-transparent text-white border-2 border-white/60 font-label-bold text-label-bold px-8 py-4 rounded-full hover:bg-white hover:text-primary hover:border-white transition-colors">
                         Xem dịch vụ
                     </button>
+</div>
 </div>
 </div>
 </section>
@@ -501,55 +489,7 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap-md md:py-section-gap-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-<div class="md:col-span-1">
-<a class="font-display-lg text-headline-xl md:text-display-lg text-primary mb-4 block" href="index.html">Candy Catering</a>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">Giải pháp tiệc lưu động cao cấp hàng đầu tại Hà Nội.</p>
-</div>
-<div class="md:col-span-3 grid grid-cols-2 sm:grid-cols-3 gap-8">
-<div>
-<p class="font-body-lg text-body-lg font-bold text-on-surface mb-4">Dịch vụ</p>
-<ul class="space-y-3 font-body-md text-body-md">
-<li><a class="text-on-secondary-fixed-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Tiệc cưới</a></li>
-<li><a class="text-on-secondary-fixed-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Tiệc hội nghị</a></li>
-<li><a class="text-on-secondary-fixed-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Tiệc tại gia</a></li>
-</ul>
-</div>
-<div>
-<p class="font-body-lg text-body-lg font-bold text-on-surface mb-4">Thông tin</p>
-<ul class="space-y-3 font-body-md text-body-md">
-<li><a class="text-on-secondary-fixed-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Về chúng tôi</a></li>
-<li><a class="text-on-secondary-fixed-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Chính sách bảo mật</a></li>
-<li><a class="text-on-secondary-fixed-variant hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Điều khoản dịch vụ</a></li>
-</ul>
-</div>
-<div class="col-span-2 sm:col-span-1">
-<p class="font-body-lg text-body-lg font-bold text-on-surface mb-4">Liên hệ</p>
-<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary text-xl">location_on</span>
-<span>Thanh Xuân / Cầu Giấy, Hà Nội</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="material-symbols-outlined text-primary text-xl">call</span>
-<span>
-<a href="tel:0969166453" class="hover:text-primary transition-colors">0969 166 453</a><br>
-<a href="tel:0978902394" class="hover:text-primary transition-colors">0978 902 394</a>
-</span>
-</li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-xl">mail</span>
-<span><a href="mailto:maihuyentrang1611@gmail.com" class="hover:text-primary transition-colors text-sm break-all">maihuyentrang1611@gmail.com</a></span>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant/30 text-center md:text-left">
-<p class="font-body-md text-body-md text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">© 2024 Tiệc Lưu Động Candy. All rights reserved.</p>
-</div>
-</div>
-</footer>
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
 <script src="js/main.js"></script>
 </body></html>

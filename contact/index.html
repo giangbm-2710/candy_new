@@ -11,28 +11,28 @@
     theme: {
       extend: {
         "colors": {
-                "secondary-container": "#ff73ae",
+                "secondary-container": "#FCE4EC",
                 "inverse-surface": "#303031",
-                "on-secondary-fixed-variant": "#890f50",
+                "on-secondary-fixed-variant": "#880E4F",
                 "tertiary": "#64535a",
-                "surface-container-high": "#eae7e8",
+                "surface-container-high": "#FCE4EC",
                 "error": "#ba1a1a",
-                "surface-container-highest": "#e5e2e3",
-                "on-surface": "#1b1b1c",
+                "surface-container-highest": "#FCE4EC",
+                "on-surface": "#3B0A25",
                 "error-container": "#ffdad6",
                 "on-secondary-container": "#740041",
-                "on-surface-variant": "#5a4044",
+                "on-surface-variant": "#6D3B52",
                 "on-tertiary-container": "#fff2f5",
                 "on-error-container": "#93000a",
-                "outline-variant": "#e3bdc3",
+                "outline-variant": "#FCE4EC",
                 "on-primary-fixed": "#3f0016",
                 "on-secondary": "#ffffff",
                 "inverse-primary": "#ffb2bf",
-                "on-primary-fixed-variant": "#90003b",
+                "on-primary-fixed-variant": "#880E4F",
                 "secondary-fixed": "#ffd9e4",
                 "surface-tint": "#bc004f",
-                "surface-bright": "#fcf8f9",
-                "surface-container": "#f0edee",
+                "surface-bright": "#FFF5F9",
+                "surface-container": "#FCE4EC",
                 "on-background": "#1b1b1c",
                 "on-tertiary-fixed": "#25181e",
                 "on-primary-container": "#fff2f3",
@@ -40,24 +40,24 @@
                 "on-error": "#ffffff",
                 "inverse-on-surface": "#f3f0f1",
                 "tertiary-container": "#7e6b72",
-                "surface": "#fcf8f9",
+                "surface": "#FFF5F9",
                 "tertiary-fixed-dim": "#d7c1c8",
-                "surface-container-low": "#f6f3f4",
+                "surface-container-low": "#FFF5F9",
                 "primary-fixed": "#ffd9de",
-                "background": "#fcf8f9",
-                "secondary": "#a82d68",
+                "background": "#FFF5F9",
+                "secondary": "#880E4F",
                 "surface-dim": "#dcd9da",
                 "surface-container-lowest": "#ffffff",
                 "on-tertiary": "#ffffff",
                 "primary-fixed-dim": "#ffb2bf",
                 "on-secondary-fixed": "#3e0020",
                 "on-tertiary-fixed-variant": "#524249",
-                "outline": "#8e6f74",
+                "outline": "#A07080",
                 "secondary-fixed-dim": "#ffb0cc",
                 "tertiary-fixed": "#f4dce4",
                 "on-primary": "#ffffff",
-                "primary": "#b0004a",
-                "primary-container": "#d81b60"
+                "primary": "#E91E8C",
+                "primary-container": "#E91E8C"
         },
         "borderRadius": {
                 "DEFAULT": "0.25rem",
@@ -173,6 +173,7 @@
         }
     </style>
 <link href="../css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
 
@@ -186,182 +187,72 @@
     </div>
 </div>
 
-<!-- TopNavBar -->
-<header class="bg-surface shadow-sm docked full-width top-0 z-50 sticky">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
-<!-- Brand -->
-<a class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-[32px] font-bold text-primary dark:text-primary-fixed hover:opacity-80 transition-opacity" href="../index.html">
-                Candy
+<!-- Header Placeholder -->
+<div id="header-placeholder"></div>
+<main class="flex-grow flex items-center justify-center bg-gradient-to-br from-[#7C0A43] via-[#880E4F] to-[#5C0530] relative overflow-hidden py-24 md:py-36">
+    <!-- Decorative background blobs -->
+    <div class="absolute -left-24 -bottom-24 w-[400px] h-[400px] rounded-full bg-white/5 blur-3xl pointer-events-none"></div>
+    <div class="absolute -right-24 -top-24 w-[500px] h-[500px] rounded-full bg-white/5 blur-3xl pointer-events-none"></div>
+    
+    <div class="relative z-10 text-center w-full max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+        <span class="text-pink-300/80 font-bold text-sm tracking-[0.25em] uppercase block mb-3">— LIÊN HỆ —</span>
+        <h1 class="text-white text-3xl md:text-5xl font-extrabold mb-5 tracking-wide font-display-lg">Đặt Tiệc Ngay Hôm Nay!</h1>
+        <p class="text-pink-100/70 max-w-3xl mx-auto mb-16 text-sm md:text-base leading-relaxed">
+            Hãy liên hệ với chúng tôi qua bất kỳ kênh nào bên dưới. Đội ngũ tư vấn sẽ hỗ trợ bạn chọn gói phù hợp nhất!
+        </p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <!-- Hotline -->
+            <a href="tel:0969166453" class="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-[2.5rem] p-5 pl-6 pr-8 hover:bg-white/20 hover:scale-[1.02] hover:shadow-lg transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full bg-[#22C55E] flex items-center justify-center shrink-0 shadow-md">
+                    <i class="fas fa-phone-alt text-white text-lg"></i>
+                </div>
+                <div class="flex flex-col text-left">
+                    <span class="text-white font-bold text-base leading-tight">Hotline</span>
+                    <span class="text-pink-100/90 text-sm font-semibold tracking-wide mt-1">0969 166 453</span>
+                    <span class="text-pink-100/90 text-sm font-semibold tracking-wide">0978 902 394</span>
+                </div>
             </a>
-<!-- Navigation Links (Desktop) -->
-<nav class="hidden md:flex items-center gap-8">
-<a class="font-body-lg text-body-lg text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="../index.html">Trang chủ</a>
-<a class="font-body-lg text-body-lg text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="index.html">Dịch vụ</a>
-<a class="font-body-lg text-body-lg text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="../gallery/index.html">Thư viện</a>
-<a class="font-body-lg text-body-lg text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="../pricing/index.html">Báo giá</a>
-<a class="font-body-lg text-body-lg text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors" href="../blog/index.html">Tin tức</a>
-<a class="font-body-lg text-body-lg text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1" href="../contact/index.html">Liên hệ</a>
-</nav>
-<!-- Trailing Action -->
-<button class="hidden md:flex items-center justify-center bg-primary-container text-on-primary px-6 py-3 rounded-full font-label-bold text-label-bold hover:brightness-95 transition-all scale-95 duration-200">
-                Nhận báo giá
-            </button>
-<!-- Mobile Menu Toggle -->
-<button class="md:hidden text-primary p-2">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</header>
-<main class="flex-grow">
-<!-- Hero Header -->
-<section class="relative pt-section-gap-md md:pt-section-gap-lg pb-16 md:pb-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center">
-<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6">Liên Hệ Với Chúng Tôi</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-                Hãy để Candy đồng hành cùng bạn trong những sự kiện quan trọng. Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng lắng nghe và tư vấn giải pháp tiệc hoàn hảo nhất.
-            </p>
-</section>
-<!-- Bento Grid: Contact Info & Form -->
-<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto pb-section-gap-md md:pb-section-gap-lg">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-<!-- Contact Information Cards (Left Col) -->
-<div class="lg:col-span-5 flex flex-col gap-6">
-<!-- Address Card -->
-<div class="bg-surface rounded-xl p-8 shadow-ambient hover-lift flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-fixed-dim shrink-0">
-<span class="material-symbols-outlined" data-icon="location_on" data-weight="fill" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Địa bàn hoạt động</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Thanh Xuân, Cầu Giấy và các khu vực khác tại Hà Nội</p>
-</div>
-</div>
-<!-- Contact Details Card -->
-<div class="bg-surface rounded-xl p-8 shadow-ambient hover-lift flex flex-col gap-6">
-<div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-fixed-dim shrink-0">
-<span class="material-symbols-outlined" data-icon="call" data-weight="fill" style="font-variation-settings: 'FILL' 1;">call</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Điện thoại / Hotline</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-<a href="tel:0969166453" class="hover:text-primary transition-colors font-semibold">0969 166 453</a> (Hotline 1)<br>
-<a href="tel:0978902394" class="hover:text-primary transition-colors font-semibold">0978 902 394</a> (Hotline 2)
-</p>
-</div>
-</div>
-<div class="h-px bg-surface-variant w-full"></div>
-<div class="flex items-start gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-fixed-dim shrink-0">
-<span class="material-symbols-outlined" data-icon="mail" data-weight="fill" style="font-variation-settings: 'FILL' 1;">mail</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Email</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-<a href="mailto:maihuyentrang1611@gmail.com" class="hover:text-primary transition-colors font-semibold">maihuyentrang1611@gmail.com</a>
-</p>
-</div>
-</div>
-</div>
-<!-- Social Links Card -->
-<div class="bg-surface rounded-xl p-8 shadow-ambient hover-lift">
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Kết nối với chúng tôi</h3>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors" href="https://web.facebook.com/profile.php?id=100095197116952" target="_blank" title="Facebook">
-<span class="material-symbols-outlined">public</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors" href="https://zalo.me/0969166453" target="_blank" title="Zalo">
-<span class="material-symbols-outlined">chat_bubble</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors" href="https://www.messenger.com/t/1576062102666875" target="_blank" title="Messenger">
-<span class="material-symbols-outlined">chat</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-secondary hover:text-primary hover:border-primary transition-colors" href="https://www.tiktok.com/@candy_events.catering" target="_blank" title="TikTok">
-<span class="material-symbols-outlined">video_library</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Inquiry Form (Right Col) -->
-<div class="lg:col-span-7 bg-surface rounded-xl p-8 md:p-12 shadow-ambient">
-<h2 class="font-headline-md text-headline-md md:font-headline-xl md:text-headline-xl text-primary mb-8">Gửi Yêu Cầu Tư Vấn</h2>
-<form class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Name -->
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface mb-2" for="name">Họ và tên *</label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="name" placeholder="Nhập họ và tên" type="text">
-</div>
-<!-- Phone -->
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface mb-2" for="phone">Số điện thoại *</label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="phone" placeholder="Nhập số điện thoại" type="tel">
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Event Type -->
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface mb-2" for="event-type">Loại hình sự kiện</label>
-<select class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors appearance-none" id="event-type">
-<option disabled="" selected="" value="">Chọn loại hình</option>
-<option value="wedding">Tiệc cưới</option>
-<option value="corporate">Tiệc hội nghị / Công ty</option>
-<option value="home">Tiệc tại gia</option>
-<option value="other">Khác</option>
-</select>
-</div>
-<!-- Guest Count -->
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface mb-2" for="guest-count">Số lượng khách dự kiến</label>
-<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors" id="guest-count" placeholder="VD: 100" type="number">
-</div>
-</div>
-<!-- Message -->
-<div>
-<label class="block font-label-bold text-label-bold text-on-surface mb-2" for="message">Yêu cầu chi tiết</label>
-<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-colors resize-none" id="message" placeholder="Vui lòng mô tả thêm về địa điểm, ngân sách dự kiến hoặc các yêu cầu đặc biệt khác..." rows="4"></textarea>
-</div>
-<!-- Submit Button -->
-<div class="pt-4">
-<button class="w-full md:w-auto bg-primary-container text-on-primary px-8 py-4 rounded-lg font-label-bold text-label-bold hover:brightness-95 transition-all flex items-center justify-center gap-2" type="submit">
-<span>Gửi Yêu Cầu</span>
-<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</button>
-</div>
-</form>
-</div>
-</div>
-</section>
-<!-- Map Section -->
-<section class="w-full h-96 md:h-[500px] bg-surface-container overflow-hidden">
-<!-- Placeholder for Google Maps. In a real scenario, this would be an iframe -->
-<img class="w-full h-full object-cover" data-alt="A clean, minimalist high-key top-down map view of Hanoi city center." data-location="Hanoi" src="../imgs/tiec-banh-tra-ha-noi-2.jpg">
-</section>
+            
+            <!-- Zalo -->
+            <a href="https://zalo.me/0969166453" target="_blank" class="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-[2.5rem] p-5 pl-6 pr-8 hover:bg-white/20 hover:scale-[1.02] hover:shadow-lg transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shrink-0 shadow-md p-1.5 overflow-hidden">
+                    <img src="../imgs/zalo.png" alt="Zalo" class="w-full h-full object-contain">
+                </div>
+                <div class="flex flex-col text-left">
+                    <span class="text-white font-bold text-base leading-tight">Zalo</span>
+                    <span class="text-pink-100/95 text-sm mt-1">Chat nhanh qua Zalo</span>
+                </div>
+            </a>
+            
+            <!-- Facebook -->
+            <a href="https://web.facebook.com/profile.php?id=100095197116952" target="_blank" class="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-[2.5rem] p-5 pl-6 pr-8 hover:bg-white/20 hover:scale-[1.02] hover:shadow-lg transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full bg-[#1877F2] flex items-center justify-center shrink-0 shadow-md">
+                    <i class="fab fa-facebook-f text-white text-lg"></i>
+                </div>
+                <div class="flex flex-col text-left">
+                    <span class="text-white font-bold text-base leading-tight">Facebook</span>
+                    <span class="text-pink-100/95 text-sm mt-1">Tiệc lưu động Candy</span>
+                </div>
+            </a>
+            
+            <!-- Messenger -->
+            <a href="https://www.messenger.com/t/1576062102666875" target="_blank" class="flex items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-[2.5rem] p-5 pl-6 pr-8 hover:bg-white/20 hover:scale-[1.02] hover:shadow-lg transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full bg-[#00B2FF] flex items-center justify-center shrink-0 shadow-md p-2.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white" class="w-full h-full">
+                        <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a.24.24 0 0 0 .347-.064l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col text-left">
+                    <span class="text-white font-bold text-base leading-tight">Messenger</span>
+                    <span class="text-pink-100/95 text-sm mt-1">Nhắn tin trực tiếp</span>
+                </div>
+            </a>
+        </div>
+    </div>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline full-width">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap-md md:py-section-gap-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-<!-- Brand & Copyright -->
-<div class="col-span-1 md:col-span-2 flex flex-col gap-4">
-<span class="font-display-lg text-[32px] md:text-[40px] font-bold text-primary dark:text-primary-fixed">Candy</span>
-<p class="font-body-md text-body-md text-on-surface-variant dark:text-secondary-fixed-dim mt-auto pt-8">
-                    © 2024 Tiệc Lưu Động Candy. All rights reserved.
-                </p>
-</div>
-<!-- Links Column 1 -->
-<div class="col-span-1 flex flex-col gap-4">
-<h4 class="font-label-bold text-label-bold text-primary mb-2">Dịch vụ</h4>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-secondary-fixed-dim opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed transition-all underline" href="#">Tiệc cưới</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-secondary-fixed-dim opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed transition-all underline" href="#">Tiệc hội nghị</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-secondary-fixed-dim opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed transition-all underline" href="#">Tiệc tại gia</a>
-</div>
-<!-- Links Column 2 -->
-<div class="col-span-1 flex flex-col gap-4">
-<h4 class="font-label-bold text-label-bold text-primary mb-2">Thông tin</h4>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-secondary-fixed-dim opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed transition-all underline" href="#">Về chúng tôi</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-secondary-fixed-dim opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed transition-all underline" href="#">Chính sách bảo mật</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-secondary-fixed-dim opacity-80 hover:opacity-100 hover:text-primary dark:hover:text-primary-fixed transition-all underline" href="#">Điều khoản dịch vụ</a>
-</div>
-</div>
-</footer>
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
 <script src="../js/main.js"></script>
 </body></html>

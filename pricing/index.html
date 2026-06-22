@@ -11,28 +11,28 @@
     theme: {
       extend: {
         "colors": {
-                "secondary-container": "#ff73ae",
+                "secondary-container": "#FCE4EC",
                 "inverse-surface": "#303031",
-                "on-secondary-fixed-variant": "#890f50",
+                "on-secondary-fixed-variant": "#880E4F",
                 "tertiary": "#64535a",
-                "surface-container-high": "#eae7e8",
+                "surface-container-high": "#FCE4EC",
                 "error": "#ba1a1a",
-                "surface-container-highest": "#e5e2e3",
-                "on-surface": "#1b1b1c",
+                "surface-container-highest": "#FCE4EC",
+                "on-surface": "#3B0A25",
                 "error-container": "#ffdad6",
                 "on-secondary-container": "#740041",
-                "on-surface-variant": "#5a4044",
+                "on-surface-variant": "#6D3B52",
                 "on-tertiary-container": "#fff2f5",
                 "on-error-container": "#93000a",
-                "outline-variant": "#e3bdc3",
+                "outline-variant": "#FCE4EC",
                 "on-primary-fixed": "#3f0016",
                 "on-secondary": "#ffffff",
                 "inverse-primary": "#ffb2bf",
-                "on-primary-fixed-variant": "#90003b",
+                "on-primary-fixed-variant": "#880E4F",
                 "secondary-fixed": "#ffd9e4",
                 "surface-tint": "#bc004f",
-                "surface-bright": "#fcf8f9",
-                "surface-container": "#f0edee",
+                "surface-bright": "#FFF5F9",
+                "surface-container": "#FCE4EC",
                 "on-background": "#1b1b1c",
                 "on-tertiary-fixed": "#25181e",
                 "on-primary-container": "#fff2f3",
@@ -40,24 +40,24 @@
                 "on-error": "#ffffff",
                 "inverse-on-surface": "#f3f0f1",
                 "tertiary-container": "#7e6b72",
-                "surface": "#fcf8f9",
+                "surface": "#FFF5F9",
                 "tertiary-fixed-dim": "#d7c1c8",
-                "surface-container-low": "#f6f3f4",
+                "surface-container-low": "#FFF5F9",
                 "primary-fixed": "#ffd9de",
-                "background": "#fcf8f9",
-                "secondary": "#a82d68",
+                "background": "#FFF5F9",
+                "secondary": "#880E4F",
                 "surface-dim": "#dcd9da",
                 "surface-container-lowest": "#ffffff",
                 "on-tertiary": "#ffffff",
                 "primary-fixed-dim": "#ffb2bf",
                 "on-secondary-fixed": "#3e0020",
                 "on-tertiary-fixed-variant": "#524249",
-                "outline": "#8e6f74",
+                "outline": "#A07080",
                 "secondary-fixed-dim": "#ffb0cc",
                 "tertiary-fixed": "#f4dce4",
                 "on-primary": "#ffffff",
-                "primary": "#b0004a",
-                "primary-container": "#d81b60"
+                "primary": "#E91E8C",
+                "primary-container": "#E91E8C"
         },
         "borderRadius": {
                 "DEFAULT": "0.25rem",
@@ -163,6 +163,7 @@
         }
     </style>
 <link href="../css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary">
 
@@ -176,38 +177,27 @@
     </div>
 </div>
 
-<!-- TopNavBar (Shared Component) -->
-<header class="bg-surface dark:bg-surface-container shadow-sm dark:shadow-none docked full-width top-0 sticky z-50 transition-all duration-300" id="top-nav">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
-<a class="font-display-lg text-headline-xl font-bold text-primary dark:text-primary-fixed tracking-tight" href="../index.html">Candy Catering</a>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-lg text-body-lg scale-95 duration-200" href="../index.html">Trang chủ</a>
-<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-lg text-body-lg scale-95 duration-200" href="index.html">Dịch vụ</a>
-<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-lg text-body-lg scale-95 duration-200" href="../gallery/index.html">Thư viện</a>
-<a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-body-lg text-body-lg scale-95 duration-200" href="../pricing/index.html">Báo giá</a>
-<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-lg text-body-lg scale-95 duration-200" href="../blog/index.html">Tin tức</a>
-<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-lg text-body-lg scale-95 duration-200" href="../contact/index.html">Liên hệ</a>
-</nav>
-<button class="hidden md:flex items-center justify-center px-6 py-3 bg-primary-container text-on-primary rounded-lg font-label-bold text-label-bold hover:bg-primary transition-colors shadow-sm">
-                Nhận báo giá
-            </button>
-<!-- Mobile Menu Toggle -->
-<button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</header>
+<!-- Header Placeholder -->
+<div id="header-placeholder"></div>
 <main>
 <!-- Hero Section -->
-<section class="relative pt-24 pb-32 overflow-hidden flex items-center justify-center min-h-[614px]">
+<section class="relative pt-24 pb-32 overflow-hidden flex items-center justify-center min-h-[500px]">
 <div class="absolute inset-0 z-0">
 <div class="bg-cover bg-center w-full h-full opacity-20" data-alt="An elegant, softly blurred background of a high-end catering setup with champagne glasses and delicate floral arrangements. The lighting is bright and airy, emphasizing a luxurious, modern aesthetic. The color palette features soft whites, gentle golds, and warm ambient light." style="background-image: url('../imgs/tiec-teabreak-ha-noi-candy-23.jpg')"></div>
 <div class="absolute inset-0 bg-gradient-to-b from-surface/80 to-surface"></div>
 </div>
 <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
-<span class="inline-block py-1 px-3 rounded-full bg-surface-container-high text-primary font-label-bold text-label-bold mb-6 uppercase tracking-wider">Gói Tiệc Trà (Tea Break)</span>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 max-w-3xl mx-auto">Sự kiện hoàn hảo, chi phí hợp lý</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Lựa chọn các gói tiệc trà đa dạng phù hợp với mọi quy mô sự kiện. Chúng tôi cam kết chất lượng dịch vụ đẳng cấp từ thực đơn tinh tế đến phong cách phục vụ chuyên nghiệp.</p>
+<span class="inline-block py-1 px-4 rounded-full bg-primary-container text-white font-label-bold text-label-bold mb-6 uppercase tracking-wider">Bảng Giá</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 max-w-3xl mx-auto">Gói Dịch Vụ Tiệc Bánh Trà</h1>
+<p class="font-body-lg text-body-lg text-primary font-bold max-w-2xl mx-auto mb-6">Linh hoạt theo nhu cầu — Báo giá chi tiết khi liên hệ</p>
+<div class="max-w-xl mx-auto space-y-2 text-on-surface-variant font-body-md text-sm md:text-base mb-8 font-semibold">
+    <p>💡 Đã bao gồm dụng cụ tiệc, nhân sự setup.</p>
+    <p>⚠️ Dịch vụ chưa bao gồm: Thuế VAT, phí vận chuyển và bàn kê tiệc.</p>
+</div>
+<a href="tel:0969166453" class="inline-flex items-center gap-2 bg-primary text-white font-label-bold text-label-bold px-8 py-3.5 rounded-full hover:bg-secondary hover:shadow-lg transition-all scale-95 duration-200 hover:scale-100">
+    <i class="fas fa-phone-alt"></i>
+    <span>📞 Gọi ngay: 0969 166 453</span>
+</a>
 </div>
 </section>
 <!-- Pricing Cards Section (Tea Break) -->
@@ -216,155 +206,95 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
 <!-- Package 1: 50k -->
 <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-highest p-8 flex flex-col hover:shadow-md transition-shadow duration-300 relative overflow-hidden group">
-<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-low rounded-bl-full -mr-4 -mt-4 opacity-50 transition-transform group-hover:scale-110"></div>
-<div class="relative z-10">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Tiêu Chuẩn</h3>
-<div class="flex items-baseline gap-2 mb-6 border-b border-surface-container-high pb-6">
-<span class="font-headline-xl text-headline-xl text-on-surface">50.000đ</span>
-<span class="font-body-md text-body-md text-on-surface-variant">/ khách</span>
+    <div class="relative z-10 flex flex-col h-full">
+        <h3 class="font-headline-md text-headline-md text-primary mb-2">Menu Teabreak 50k</h3>
+        <div class="flex items-baseline gap-2 mb-4 border-b border-surface-container-high pb-4">
+            <span class="font-headline-xl text-headline-xl text-on-surface">50.000đ</span>
+            <span class="font-body-md text-body-md text-on-surface-variant">/ suất</span>
+        </div>
+        <div class="bg-surface-container-low rounded-lg p-3 mb-6 text-xs text-on-surface-variant font-semibold">
+            Bao gồm: Hoa quả (150g) · Bánh (2 bánh) · Đồ uống (2 loại, 200ml)
+        </div>
+        <div class="space-y-4 mb-8 flex-grow">
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍉 Hoa quả</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi, Xoài</p>
+            </div>
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍰 Bánh Ngọt</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Bánh Petit Matcha / Hoa quả / Choco, Bông lan cuộn ruốc / Matcha / Choco, Bánh Sukem</p>
+            </div>
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">☕ Đồ uống</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Cà phê, Trà đào cam sả / Trà cam chanh dây nhiệt đới, Trà Lipton nóng</p>
+            </div>
+        </div>
+        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 border border-outline text-primary rounded-lg font-label-bold text-label-bold hover:bg-surface-container-low transition-colors mt-auto">Đặt gói này</a>
+    </div>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-8 h-12">Giải pháp tối ưu cho hội thảo nội bộ và sự kiện quy mô vừa.</p>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">3 loại bánh ngọt cao cấp</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">2 loại trái cây tươi theo mùa</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">Trà Lipton, Cà phê đen/sữa, Nước suối</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">Khay kệ trang trí tiêu chuẩn</span>
-</li>
-<li class="flex items-start gap-3 opacity-50">
-<span class="material-symbols-outlined text-outline text-[20px] mt-0.5">cancel</span>
-<span class="font-body-md text-body-md text-outline">Bàn gallery hoa tươi</span>
-</li>
-</ul>
-<button class="w-full py-4 border border-outline text-primary rounded-lg font-label-bold text-label-bold hover:bg-surface-container-low transition-colors mt-auto">Chọn gói này</button>
+<!-- Package 2: 55k (Highlighted) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-lg border-2 border-primary-container p-8 flex flex-col hover:shadow-xl transition-shadow duration-300 relative transform md:-translate-y-4 z-20 overflow-hidden group">
+    <div class="absolute top-0 right-0 bg-primary text-on-primary text-xs font-bold px-4 py-1.5 rounded-bl-lg z-20">PHỔ BIẾN NHẤT</div>
+    <div class="relative z-10 flex flex-col h-full">
+        <h3 class="font-headline-md text-headline-md text-primary mb-2">Menu Teabreak 55k</h3>
+        <div class="flex items-baseline gap-2 mb-4 border-b border-surface-container-highest pb-4">
+            <span class="font-headline-xl text-headline-xl text-on-surface">55.000đ</span>
+            <span class="font-body-md text-body-md text-on-surface-variant">/ suất</span>
+        </div>
+        <div class="bg-primary/5 rounded-lg p-3 mb-6 text-xs text-on-surface-variant font-semibold">
+            Bao gồm: Hoa quả (150g) · Bánh (2 bánh) · Đồ uống (200ml)
+        </div>
+        <div class="space-y-4 mb-8 flex-grow">
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍉 Hoa quả</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi / Xoài</p>
+            </div>
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍰 Bánh Ngọt</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Pettit Matcha / Choco / Hoa quả, Bánh Moka / Tiramisu / Red, Bánh Sukem, Bông lan cuộn ruốc / Matcha / Choco, Bánh sừng bò trứng muối</p>
+            </div>
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">☕ Đồ uống</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Nước hoa quả, Cà phê, Trà đào cam sả / Trà cam chanh, Trà Lipton nóng</p>
+            </div>
+        </div>
+        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 bg-primary text-white rounded-lg font-label-bold text-label-bold hover:bg-secondary transition-colors mt-auto shadow-md">Đặt gói này</a>
+    </div>
 </div>
-</div>
-<!-- Package 2: 75k (Highlighted) -->
-<div class="bg-surface-container-lowest rounded-xl shadow-lg border border-primary-container p-8 flex flex-col hover:shadow-xl transition-shadow duration-300 relative transform md:-translate-y-4 z-20">
-<div class="absolute top-0 right-0 bg-tertiary text-on-tertiary text-xs font-bold px-4 py-1 rounded-bl-lg rounded-tr-xl z-20">PHỔ BIẾN NHẤT</div>
-<div class="absolute inset-0 bg-gradient-to-br from-primary-fixed/10 to-transparent z-0 rounded-xl"></div>
-<div class="relative z-10">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Cao Cấp</h3>
-<div class="flex items-baseline gap-2 mb-6 border-b border-surface-container-highest pb-6">
-<span class="font-headline-xl text-headline-xl text-on-surface">75.000đ</span>
-<span class="font-body-md text-body-md text-on-surface-variant">/ khách</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-8 h-12">Sự cân bảng hoàn hảo giữa sự đa dạng và chi phí hợp lý.</p>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">4 loại bánh ngọt, 1 loại bánh mặn</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">3 loại trái cây tươi cao cấp</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">Nước ép trái cây tươi (Cam/Dưa hấu)</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">Khay kệ trang trí sang trọng, hoa lụa</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">1 Nhân viên phục vụ / 50 khách</span>
-</li>
-</ul>
-<button class="w-full py-4 bg-primary-container text-on-primary rounded-lg font-label-bold text-label-bold hover:bg-primary transition-colors mt-auto shadow-md">Chọn gói này</button>
-</div>
-</div>
-<!-- Package 3: 100k -->
+<!-- Package 3: 75k -->
 <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-highest p-8 flex flex-col hover:shadow-md transition-shadow duration-300 relative overflow-hidden group">
-<div class="absolute bottom-0 left-0 w-32 h-32 bg-surface-container-low rounded-tr-full -ml-4 -mb-4 opacity-50 transition-transform group-hover:scale-110"></div>
-<div class="relative z-10">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Thượng Hạng</h3>
-<div class="flex items-baseline gap-2 mb-6 border-b border-surface-container-high pb-6">
-<span class="font-headline-xl text-headline-xl text-on-surface">100.000đ</span>
-<span class="font-body-md text-body-md text-on-surface-variant">/ khách</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mb-8 h-12">Trải nghiệm đẳng cấp cho các sự kiện khai trương, tiếp khách VIP.</p>
-<ul class="space-y-4 mb-10 flex-grow">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">5 loại bánh ngọt Pháp, 2 bánh mặn</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">4 loại trái cây nhập khẩu</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">Đa dạng nước ép, trà thảo mộc</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">Setup bàn gallery hoa tươi nghệ thuật</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary-container icon-fill text-[20px] mt-0.5">check_circle</span>
-<span class="font-body-md text-body-md text-on-surface">1 Nhân viên phục vụ / 30 khách</span>
-</li>
-</ul>
-<button class="w-full py-4 border border-outline text-primary rounded-lg font-label-bold text-label-bold hover:bg-surface-container-low transition-colors mt-auto">Chọn gói này</button>
+    <div class="relative z-10 flex flex-col h-full">
+        <h3 class="font-headline-md text-headline-md text-primary mb-2">Menu Teabreak 75k</h3>
+        <div class="flex items-baseline gap-2 mb-4 border-b border-surface-container-high pb-4">
+            <span class="font-headline-xl text-headline-xl text-on-surface">75.000đ</span>
+            <span class="font-body-md text-body-md text-on-surface-variant">/ suất</span>
+        </div>
+        <div class="bg-surface-container-low rounded-lg p-3 mb-6 text-xs text-on-surface-variant font-semibold">
+            Bao gồm: Hoa quả (150g) · Bánh (3 bánh) · Đồ uống (220ml)
+        </div>
+        <div class="space-y-4 mb-8 flex-grow">
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍉 Hoa quả</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi / Xoài, Bưởi da xanh / Táo</p>
+            </div>
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍰 Bánh Ngọt</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Bánh Pettit Hoa quả, Pettit Matcha / Choco, Bánh Mousse, Tiramisu, Red Velvet, Bánh Sukem, Bông lan cuộn, Su sing hoa quả, Bánh sừng bò trứng muối, Bông lan cuộn ruốc</p>
+            </div>
+            <div>
+                <span class="font-label-bold text-xs uppercase text-primary block mb-1">☕ Đồ uống</span>
+                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Nước hoa quả, Cà phê, Trà đào cam sả / Trà cam chanh, Trà Lipton nóng</p>
+            </div>
+        </div>
+        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 border border-outline text-primary rounded-lg font-label-bold text-label-bold hover:bg-surface-container-low transition-colors mt-auto">Đặt gói này</a>
+    </div>
 </div>
 </div>
-</div>
-<p class="text-center font-body-md text-body-md text-on-surface-variant mt-8 italic">* Giá trên chưa bao gồm 10% VAT. Miễn phí vận chuyển nội thành Hà Nội cho đơn hàng từ 3.000.000đ.</p>
+<p class="text-center font-body-md text-body-md text-on-surface-variant mt-8 italic">* Dịch vụ chưa bao gồm: Thuế VAT, phí vận chuyển và bàn kê tiệc.</p>
 </div>
 </section>
 </main>
-<!-- Footer (Shared Component) -->
-<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline full-width">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap-md md:py-section-gap-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto">
-<div class="col-span-1 md:col-span-1">
-<a class="font-display-lg text-headline-xl text-primary dark:text-primary-fixed mb-6 block" href="#">Candy</a>
-<p class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim mb-4">Dịch vụ tiệc lưu động cao cấp tại Hà Nội, mang đến trải nghiệm ẩm thực tinh tế và dịch vụ chuyên nghiệp cho mọi sự kiện.</p>
-</div>
-<div class="col-span-1">
-<h4 class="font-body-lg text-body-lg text-primary dark:text-inverse-primary mb-6 font-bold">Dịch vụ</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc cưới</a></li>
-<li><a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc hội nghị</a></li>
-<li><a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc tại gia</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-body-lg text-body-lg text-primary dark:text-inverse-primary mb-6 font-bold">Thông tin</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Về chúng tôi</a></li>
-<li><a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Chính sách bảo mật</a></li>
-<li><a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Điều khoản dịch vụ</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-body-lg text-body-lg text-primary dark:text-inverse-primary mb-6 font-bold">Liên hệ</h4>
-<ul class="space-y-4">
-<li class="flex items-center gap-2 text-on-secondary-fixed-variant dark:text-secondary-fixed-dim font-body-md text-body-md">
-<span class="material-symbols-outlined text-[20px]">call</span>
-<a href="tel:0969166453" class="hover:text-primary dark:hover:text-primary-fixed transition-colors">0969 166 453</a> / <a href="tel:0978902394" class="hover:text-primary dark:hover:text-primary-fixed transition-colors">0978 902 394</a>
-</li>
-<li class="flex items-center gap-2 text-on-secondary-fixed-variant dark:text-secondary-fixed-dim font-body-md text-body-md">
-<span class="material-symbols-outlined text-[20px]">mail</span>
-<a href="mailto:maihuyentrang1611@gmail.com" class="hover:text-primary dark:hover:text-primary-fixed transition-colors">maihuyentrang1611@gmail.com</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-outline-variant/30 py-6 text-center">
-<p class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim">© 2024 Tiệc Lưu Động Candy. All rights reserved.</p>
-</div>
-</footer>
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
 <script src="../js/main.js"></script>
 </body></html>

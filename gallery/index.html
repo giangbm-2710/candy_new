@@ -14,30 +14,30 @@
             theme: {
                 extend: {
                     "colors": {
-                        "surface-container-high": "#eae7e8",
-                        "secondary": "#a82d68",
-                        "secondary-container": "#ff73ae",
+                        "surface-container-high": "#FCE4EC",
+                        "secondary": "#880E4F",
+                        "secondary-container": "#FCE4EC",
                         "secondary-fixed": "#ffd9e4",
-                        "on-surface": "#1b1b1c",
+                        "on-surface": "#3B0A25",
                         "on-secondary-container": "#740041",
-                        "primary": "#b0004a",
-                        "background": "#fcf8f9",
-                        "outline": "#8e6f74",
+                        "primary": "#E91E8C",
+                        "background": "#FFF5F9",
+                        "outline": "#A07080",
                         "on-tertiary-container": "#fff2f5",
-                        "on-secondary-fixed-variant": "#890f50",
+                        "on-secondary-fixed-variant": "#880E4F",
                         "tertiary": "#64535a",
                         "surface-dim": "#dcd9da",
                         "tertiary-container": "#7e6b72",
-                        "on-surface-variant": "#5a4044",
+                        "on-surface-variant": "#6D3B52",
                         "on-tertiary": "#ffffff",
                         "inverse-surface": "#303031",
-                        "surface-container-highest": "#e5e2e3",
+                        "surface-container-highest": "#FCE4EC",
                         "surface-tint": "#bc004f",
                         "on-tertiary-fixed-variant": "#524249",
                         "on-primary-fixed": "#3f0016",
                         "on-error-container": "#93000a",
                         "on-background": "#1b1b1c",
-                        "surface-container-low": "#f6f3f4",
+                        "surface-container-low": "#FFF5F9",
                         "inverse-primary": "#ffb2bf",
                         "tertiary-fixed": "#f4dce4",
                         "surface-variant": "#e5e2e3",
@@ -46,19 +46,19 @@
                         "on-tertiary-fixed": "#25181e",
                         "on-secondary-fixed": "#3e0020",
                         "on-error": "#ffffff",
-                        "surface": "#fcf8f9",
-                        "primary-container": "#d81b60",
-                        "outline-variant": "#e3bdc3",
+                        "surface": "#FFF5F9",
+                        "primary-container": "#E91E8C",
+                        "outline-variant": "#FCE4EC",
                         "error": "#ba1a1a",
                         "tertiary-fixed-dim": "#d7c1c8",
                         "primary-fixed-dim": "#ffb2bf",
                         "on-primary": "#ffffff",
                         "secondary-fixed-dim": "#ffb0cc",
                         "primary-fixed": "#ffd9de",
-                        "surface-container": "#f0edee",
-                        "on-primary-fixed-variant": "#90003b",
+                        "surface-container": "#FCE4EC",
+                        "on-primary-fixed-variant": "#880E4F",
                         "surface-container-lowest": "#ffffff",
-                        "surface-bright": "#fcf8f9",
+                        "surface-bright": "#FFF5F9",
                         "error-container": "#ffdad6",
                         "inverse-on-surface": "#f3f0f1"
                     },
@@ -144,6 +144,7 @@
         }
     </style>
 <link href="../css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
 
@@ -157,33 +158,8 @@
     </div>
 </div>
 
-<!-- Top Navigation -->
-<header class="bg-surface shadow-sm sticky top-0 z-50 w-full transition-all duration-300">
-<nav class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
-<!-- Brand -->
-<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary flex items-center gap-2 font-bold" href="../index.html">
-                Candy Catering
-            </a>
-<!-- Desktop Nav -->
-<div class="hidden md:flex items-center gap-8">
-<ul class="flex gap-6 font-title-lg text-title-lg">
-<li><a class="text-secondary hover:text-primary transition-colors" href="../index.html">Trang chủ</a></li>
-<li><a class="text-secondary hover:text-primary transition-colors" href="../services/index.html">Dịch vụ</a></li>
-<li><a class="text-primary border-b-2 border-primary pb-1" href="index.html">Thư viện</a></li>
-<li><a class="text-secondary hover:text-primary transition-colors" href="../pricing/index.html">Báo giá</a></li>
-<li><a class="text-secondary hover:text-primary transition-colors" href="../blog/index.html">Tin tức</a></li>
-<li><a class="text-secondary hover:text-primary transition-colors" href="../contact/index.html">Liên hệ</a></li>
-</ul>
-<button class="bg-gradient-to-r from-primary to-secondary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity min-h-[48px] shadow-sm">
-                    Nhận báo giá
-                </button>
-</div>
-<!-- Mobile Menu Toggle -->
-<button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
-<span class="material-symbols-outlined text-2xl">menu</span>
-</button>
-</nav>
-</header>
+<!-- Header Placeholder -->
+<div id="header-placeholder"></div>
 <main>
 <!-- Hero Section -->
 <section class="py-16 md:py-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center">
@@ -226,13 +202,13 @@
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
         <div class="text-center mb-12 fade-in">
             <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-label-bold text-label-bold mb-3 uppercase tracking-wider text-xs">Sự Kiện Khách Hàng</span>
-            <h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl text-on-surface mb-4">Tiệc Thực Tế Của Khách Hàng</h2>
-            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Mỗi khách hàng là một câu chuyện — Bấm vào từng thẻ để xem album ảnh riêng biệt</p>
+            <h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl text-on-surface mb-4">Tiệc Của <span class="text-primary">Khách Hàng</span></h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Mỗi khách hàng là một câu chuyện — Bấm để xem album ảnh riêng</p>
         </div>
 
         <div class="space-y-6 max-w-4xl mx-auto">
             <!-- Event Card 1 -->
-            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+            <div class="event-card bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
                 <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-lg">L</div>
@@ -277,7 +253,7 @@
             </div>
 
             <!-- Event Card 2 -->
-            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+            <div class="event-card bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
                 <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-yellow-500/10 text-yellow-700 flex items-center justify-center font-bold text-lg">K</div>
@@ -322,7 +298,7 @@
             </div>
 
             <!-- Event Card 3 -->
-            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+            <div class="event-card bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
                 <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-green-500/10 text-green-700 flex items-center justify-center font-bold text-lg">T</div>
@@ -359,7 +335,7 @@
             </div>
 
             <!-- Event Card 4 -->
-            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+            <div class="event-card bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
                 <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-pink-500/10 text-pink-700 flex items-center justify-center font-bold text-lg">H</div>
@@ -396,7 +372,7 @@
             </div>
 
             <!-- Event Card 5 -->
-            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+            <div class="event-card bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
                 <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-full bg-purple-500/10 text-purple-700 flex items-center justify-center font-bold text-lg">T</div>
@@ -432,54 +408,19 @@
                 </div>
             </div>
         </div>
+
+        <div class="mt-12 text-center" id="loadMoreEventsWrap">
+            <button id="loadMoreEventsBtn" onclick="loadMoreEvents()" class="bg-surface-container-lowest border-2 border-primary text-primary font-label-bold text-label-bold px-8 py-3 rounded-full hover:bg-primary-fixed transition-colors min-h-[48px] inline-flex items-center shadow-sm">
+                <span class="material-symbols-outlined mr-2">add</span> Xem Thêm Sự Kiện
+            </button>
+            <button id="collapseEventsBtn" onclick="collapseEvents()" style="display: none;" class="bg-surface-container-lowest border-2 border-primary text-primary font-label-bold text-label-bold px-8 py-3 rounded-full hover:bg-primary-fixed transition-colors min-h-[48px] inline-flex items-center shadow-sm">
+                <span class="material-symbols-outlined mr-2">remove</span> Thu Gọn
+            </button>
+        </div>
     </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant py-16 px-margin-mobile md:px-gutter mt-16">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto font-body-md text-body-md">
-<!-- Brand Column -->
-<div class="col-span-1 md:col-span-2">
-<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary font-bold mb-stack-md block" href="../index.html">
-                    Candy Catering
-                </a>
-<p class="text-on-surface-variant max-w-md mb-stack-md">
-                    Chuyên cung cấp dịch vụ tiệc trà, teabreak, tiệc finger food chuyên nghiệp và đẳng cấp tại Hà Nội.
-                </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://web.facebook.com/profile.php?id=100095197116952" target="_blank" title="Facebook">
-<span class="material-symbols-outlined">public</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://zalo.me/0969166453" target="_blank" title="Zalo">
-<span class="material-symbols-outlined">chat_bubble</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="mailto:maihuyentrang1611@gmail.com" title="Email">
-<span class="material-symbols-outlined">mail</span>
-</a>
-</div>
-</div>
-<!-- Links Column 1 -->
-<div class="col-span-1">
-<h4 class="font-headline-md text-headline-md text-primary mb-stack-md text-lg">Dịch Vụ</h4>
-<ul class="space-y-stack-sm flex flex-col">
-<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc cưới</a></li>
-<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc hội nghị</a></li>
-<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc tại gia</a></li>
-</ul>
-</div>
-<!-- Links Column 2 -->
-<div class="col-span-1">
-<h4 class="font-headline-md text-headline-md text-primary mb-stack-md text-lg">Thông Tin</h4>
-<ul class="space-y-stack-sm flex flex-col">
-<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Về chúng tôi</a></li>
-<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Chính sách bảo mật</a></li>
-<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Điều khoản dịch vụ</a></li>
-</ul>
-</div>
-</div>
-<div class="max-w-container-max mx-auto mt-12 pt-6 border-t border-surface-variant text-center text-on-surface-variant text-sm">
-<p>© 2024 Tiệc Lưu Động Candy. All rights reserved.</p>
-</div>
-</footer>
+<!-- Footer Placeholder -->
+<div id="footer-placeholder"></div>
 <script src="../js/main.js"></script>
 </body></html>

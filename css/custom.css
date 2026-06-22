@@ -56,7 +56,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #3e0020, #b0004a);
+    background: linear-gradient(135deg, #880E4F, #E91E8C);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +148,7 @@ html {
     box-shadow: 0 8px 20px rgba(176, 0, 74, 0.35);
 }
 .float-btn.phone-btn {
-    background: linear-gradient(135deg, #e91e63, #b0004a);
+    background: linear-gradient(135deg, #E91E8C, #880E4F);
 }
 .float-btn.zalo-btn {
     background: #0068ff;
@@ -238,3 +238,161 @@ html {
     opacity: 1;
     transform: translate(0) scale(1);
 }
+
+/* Homepage header transparent transition styles */
+#main-header {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+}
+
+#main-header.header-transparent {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+#main-header.header-transparent .logo-text-transition {
+    color: #ffffff !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#main-header.header-transparent nav a,
+#main-header.header-transparent div.gap-8 a {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-color: transparent !important;
+}
+
+#main-header.header-transparent nav a[aria-current="page"],
+#main-header.header-transparent div.gap-8 a[aria-current="page"] {
+    color: #ffffff !important;
+    border-bottom-color: #ffffff !important;
+}
+
+#main-header.header-transparent nav a:hover,
+#main-header.header-transparent div.gap-8 a:hover {
+    color: #ffffff !important;
+}
+
+#main-header.header-transparent .nav-cta-btn {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+#main-header.header-transparent .nav-cta-btn:hover {
+    background-color: #ffffff !important;
+    color: #E91E8C !important;
+}
+
+#main-header.header-transparent .mobile-menu-btn {
+    color: #ffffff !important;
+}
+
+#main-header:not(.header-transparent) {
+    background-color: var(--tw-bg-surface, #FFF5F9) !important;
+}
+
+/* ==================== REFERENCE SITE FOOTER STYLE ==================== */
+.footer {
+    background: #2d0020;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 60px 0 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand .logo-text {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #F8B4CE;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-brand p {
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+.footer h4 {
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links a:hover {
+    color: #F8B4CE;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-bottom a {
+    color: #F8B4CE;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+/* Responsive Footer */
+@media (max-width: 991px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+

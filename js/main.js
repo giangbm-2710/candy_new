@@ -14,6 +14,99 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Render Header and Footer templates if placeholders exist
+    const headerPlaceholder = document.getElementById('header-placeholder');
+    if (headerPlaceholder) {
+        const isTransparent = headerPlaceholder.getAttribute('data-transparent') === 'true';
+        const headerClass = isTransparent 
+            ? "fixed top-0 left-0 w-full z-50 transition-all duration-300 header-transparent shadow-none" 
+            : "sticky top-0 z-50 bg-surface dark:bg-surface-container shadow-sm dark:shadow-none transition-all duration-300 w-full";
+        
+        headerPlaceholder.outerHTML = `
+        <header class="${headerClass}" id="main-header">
+            <div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+                <!-- Brand Logo -->
+                <a class="flex items-center gap-2 font-display-lg text-headline-md md:text-headline-md font-bold text-primary dark:text-primary-fixed shrink-0 whitespace-nowrap" href="${prefix}index.html">
+                    <img src="${prefix}imgs/logo.png" alt="Logo Candy Catering" class="h-10 w-auto object-contain">
+                    <span class="whitespace-nowrap">Candy Catering</span>
+                </a>
+                <!-- Navigation Links (Desktop) -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="${prefix}index.html">Trang chủ</a>
+                    <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="${prefix}services/index.html">Dịch vụ</a>
+                    <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="${prefix}gallery/index.html">Thư viện</a>
+                    <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="${prefix}pricing/index.html">Báo giá</a>
+                    <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="${prefix}blog/index.html">Tin tức</a>
+                    <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="${prefix}contact/index.html">Liên hệ</a>
+                </nav>
+                <!-- Trailing Action -->
+                <div class="hidden md:block">
+                    <button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-fixed-dim transition-colors shadow-sm scale-95 duration-200 hover:scale-100">
+                        Nhận báo giá
+                    </button>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </header>
+        `;
+    }
+
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    if (footerPlaceholder) {
+        footerPlaceholder.outerHTML = `
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <span class="logo-text">
+                            <img src="${prefix}imgs/logo.png" alt="Logo Candy" style="height:60px;vertical-align:middle;object-fit:contain;display:inline-block;margin-right:8px;">Candy
+                        </span>
+                        <p>
+                            <strong>Tiệc Lưu Động Candy</strong> — Dịch vụ tiệc bánh trà cao cấp tại TP.Hà Nội.
+                            Chuyên cung cấp set up tea break cho công ty, sự kiện, sinh nhật,
+                            khai trương với phong cách sang trọng và chuyên nghiệp.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Dịch Vụ</h4>
+                        <ul class="footer-links">
+                            <li><a href="${prefix}services/index.html"><i class="fas fa-angle-right"></i> Tea Break Công Ty</a></li>
+                            <li><a href="${prefix}services/index.html"><i class="fas fa-angle-right"></i> Tiệc Sinh Nhật</a></li>
+                            <li><a href="${prefix}services/index.html"><i class="fas fa-angle-right"></i> Sự Kiện Khai Trương</a></li>
+                            <li><a href="${prefix}services/index.html"><i class="fas fa-angle-right"></i> Tiệc Gia Đình</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Liên Kết</h4>
+                        <ul class="footer-links">
+                            <li><a href="${prefix}index.html"><i class="fas fa-angle-right"></i> Trang Chủ</a></li>
+                            <li><a href="${prefix}index.html#about"><i class="fas fa-angle-right"></i> Giới Thiệu</a></li>
+                            <li><a href="${prefix}gallery/index.html"><i class="fas fa-angle-right"></i> Thư Viện Ảnh</a></li>
+                            <li><a href="${prefix}pricing/index.html"><i class="fas fa-angle-right"></i> Bảng Giá</a></li>
+                            <li><a href="${prefix}contact/index.html"><i class="fas fa-angle-right"></i> Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Liên Hệ</h4>
+                        <ul class="footer-links">
+                            <li><a href="tel:0969166453"><i class="fas fa-phone"></i> 0969 166 453 / 0978 902 394</a></li>
+                            <li><a href="mailto:maihuyentrang1611@gmail.com"><i class="fas fa-envelope"></i> maihuyentrang1611@gmail.com</a></li>
+                            <li><a href="#"><i class="fas fa-map-marker-alt"></i> TP Hà Nội</a></li>
+                            <li><a href="#"><i class="fas fa-clock"></i> 8:00 - 21:00 hàng ngày</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 <a href="${prefix}index.html">Tiệc Lưu Động Candy</a>. Tất cả quyền được bảo lưu. | Hotline: <a href="tel:0969166453">0969 166 453</a></p>
+                </div>
+            </div>
+        </footer>
+        `;
+    }
+
     const navLinksMap = {
         'Trang chủ': prefix + 'index.html',
         'Dịch vụ': prefix + 'services/index.html',
@@ -215,17 +308,35 @@ document.addEventListener('DOMContentLoaded', () => {
     setupMobileMenu();
 
     // 3. Header Scroll Shadow Transition
-    const header = document.querySelector('header, nav.sticky');
+    const header = document.querySelector('header, nav.sticky, #main-header');
     if (header) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 15) {
-                header.classList.add('shadow-md');
-                header.classList.remove('shadow-sm');
+        const isTransparent = header.classList.contains('header-transparent');
+        
+        const handleScroll = () => {
+            if (window.scrollY > 30) {
+                if (isTransparent) {
+                    header.classList.remove('header-transparent');
+                    header.classList.remove('shadow-none');
+                    header.classList.add('bg-surface', 'shadow-md');
+                } else {
+                    header.classList.add('shadow-md');
+                    header.classList.remove('shadow-sm');
+                }
             } else {
-                header.classList.remove('shadow-md');
-                header.classList.add('shadow-sm');
+                if (isTransparent) {
+                    header.classList.add('header-transparent');
+                    header.classList.add('shadow-none');
+                    header.classList.remove('bg-surface', 'shadow-md');
+                } else {
+                    header.classList.remove('shadow-md');
+                    header.classList.add('shadow-sm');
+                }
             }
-        });
+        };
+        
+        window.addEventListener('scroll', handleScroll);
+        // Run once on load in case page is already scrolled
+        handleScroll();
     }
 
     // 4. Loading Screen Logic
@@ -252,8 +363,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="material-symbols-outlined text-2xl">arrow_upward</span>
                 <span class="tooltip">Lên đầu trang</span>
             </a>
-            <a href="https://www.messenger.com/t/1576062102666875" target="_blank" class="float-btn messenger-btn">
-                <span class="material-symbols-outlined text-2xl">chat</span>
+            <a href="https://www.messenger.com/t/1576062102666875" target="_blank" class="float-btn messenger-btn" title="Messenger">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6">
+                    <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                </svg>
                 <span class="tooltip">Messenger</span>
             </a>
             <a href="https://zalo.me/0969166453" target="_blank" class="float-btn zalo-btn">
@@ -655,4 +768,104 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     };
+
+    // Load More & Collapse Events Section (Show 3 initially)
+    const INITIAL_EVENTS = 3;
+    let currentVisibleEvents = INITIAL_EVENTS;
+
+    window.initEventsLoadMore = function() {
+        const events = document.querySelectorAll('#events .event-card');
+        const wrap = document.getElementById('loadMoreEventsWrap');
+        const loadMoreBtn = document.getElementById('loadMoreEventsBtn');
+        const collapseBtn = document.getElementById('collapseEventsBtn');
+        
+        if (!events.length) return;
+        
+        events.forEach((ev, i) => {
+            if (i >= currentVisibleEvents) {
+                ev.style.display = 'none';
+                ev.classList.remove('visible'); 
+            } else {
+                ev.style.display = 'block';
+                ev.classList.add('visible');
+            }
+        });
+
+        if (wrap && loadMoreBtn && collapseBtn) {
+            if (events.length <= currentVisibleEvents) {
+                wrap.style.display = 'none';
+            } else {
+                wrap.style.display = 'block';
+                loadMoreBtn.style.display = 'inline-flex';
+                collapseBtn.style.display = 'none';
+            }
+        }
+    };
+
+    window.loadMoreEvents = function() {
+        const events = document.querySelectorAll('#events .event-card');
+        const loadMoreBtn = document.getElementById('loadMoreEventsBtn');
+        const collapseBtn = document.getElementById('collapseEventsBtn');
+        
+        currentVisibleEvents = events.length;
+        
+        events.forEach((ev, i) => {
+            if (i < currentVisibleEvents && ev.style.display === 'none') {
+                ev.style.display = 'block';
+                void ev.offsetWidth; 
+                ev.classList.add('visible');
+            }
+        });
+
+        if (loadMoreBtn && collapseBtn) {
+            loadMoreBtn.style.display = 'none';
+            collapseBtn.style.display = 'inline-flex';
+        }
+    };
+
+    window.collapseEvents = function() {
+        const events = document.querySelectorAll('#events .event-card');
+        const loadMoreBtn = document.getElementById('loadMoreEventsBtn');
+        const collapseBtn = document.getElementById('collapseEventsBtn');
+        
+        currentVisibleEvents = INITIAL_EVENTS;
+        
+        events.forEach((ev, i) => {
+            if (i >= currentVisibleEvents) {
+                ev.style.display = 'none';
+                ev.classList.remove('visible');
+                const body = ev.querySelector('.event-body');
+                const toggleBtn = ev.querySelector('.event-toggle span');
+                if (body) {
+                    body.classList.add('hidden');
+                    body.classList.remove('grid', 'open');
+                }
+                if (toggleBtn) {
+                    toggleBtn.textContent = 'expand_more';
+                }
+            }
+        });
+
+        if (loadMoreBtn && collapseBtn) {
+            loadMoreBtn.style.display = 'inline-flex';
+            collapseBtn.style.display = 'none';
+        }
+
+        const eventsSection = document.getElementById('events');
+        if (eventsSection) {
+            const offset = 100;
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = eventsSection.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    };
+
+    // Initialize loading logic on page load
+    initEventsLoadMore();
 });
