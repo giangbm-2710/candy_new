@@ -1,0 +1,240 @@
+/* Custom Styles for Candy Catering */
+
+/* Ensure smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Glassmorphism panel styling */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hover lift micro-animation */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Service card hover effects */
+.service-card {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+.service-card:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+.service-card img {
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.service-card:hover img {
+    transform: scale(1.06);
+}
+
+/* Mobile navigation drawer transition classes */
+.mobile-drawer-open {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+
+/* Utility to prevent scrolling when mobile menu is open */
+.overflow-hidden-mobile {
+    overflow: hidden;
+}
+
+/* Loading Screen custom styles */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #3e0020, #b0004a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+.loading-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.loading-content {
+    text-align: center;
+    color: white;
+}
+.loading-logo {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+    animation: loading-pulse 1.5s ease-in-out infinite;
+}
+.loading-bar {
+    width: 200px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.loading-bar-fill {
+    height: 100%;
+    background: #ff73ae;
+    border-radius: 10px;
+    animation: loadBar 1.8s ease-in-out forwards;
+}
+@keyframes loadBar {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+@keyframes loading-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.04); opacity: 0.85; }
+}
+
+/* Hero Slider Background crossfade */
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    z-index: 0;
+}
+.hero-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Floating Action Buttons */
+.floating-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+}
+.float-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 12px rgba(176, 0, 74, 0.2);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+.float-btn:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(176, 0, 74, 0.35);
+}
+.float-btn.phone-btn {
+    background: linear-gradient(135deg, #e91e63, #b0004a);
+}
+.float-btn.zalo-btn {
+    background: #0068ff;
+    padding: 8px;
+}
+.float-btn.messenger-btn {
+    background: linear-gradient(135deg, #006aff, #00b2ff);
+}
+.float-btn.top-btn {
+    background: #1b1b1c;
+    opacity: 0;
+    visibility: hidden;
+}
+.float-btn.top-btn.show {
+    opacity: 0.8;
+    visibility: visible;
+}
+.float-btn.top-btn.show:hover {
+    opacity: 1;
+}
+.float-btn .tooltip {
+    position: absolute;
+    right: 58px;
+    background: rgba(27, 27, 28, 0.95);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateX(5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.float-btn:hover .tooltip {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Lightbox Modal styles */
+#lightbox-modal {
+    transition: opacity 0.3s ease-in-out;
+}
+#lightbox-modal.hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+#lightbox-modal:not(.hidden) {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Masonry items fade-in effect */
+.masonry-item {
+    opacity: 0;
+    transform: scale(0.96) translateY(10px);
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.masonry-item.visible-init {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+/* Fade animations for section entries */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-in.visible,
+.fade-in-left.visible,
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}

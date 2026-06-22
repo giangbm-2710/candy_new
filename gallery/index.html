@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thư Viện Ảnh Sự Kiện - Candy Catering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&amp;family=Manrope:wght@700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eae7e8",
+                        "secondary": "#a82d68",
+                        "secondary-container": "#ff73ae",
+                        "secondary-fixed": "#ffd9e4",
+                        "on-surface": "#1b1b1c",
+                        "on-secondary-container": "#740041",
+                        "primary": "#b0004a",
+                        "background": "#fcf8f9",
+                        "outline": "#8e6f74",
+                        "on-tertiary-container": "#fff2f5",
+                        "on-secondary-fixed-variant": "#890f50",
+                        "tertiary": "#64535a",
+                        "surface-dim": "#dcd9da",
+                        "tertiary-container": "#7e6b72",
+                        "on-surface-variant": "#5a4044",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#303031",
+                        "surface-container-highest": "#e5e2e3",
+                        "surface-tint": "#bc004f",
+                        "on-tertiary-fixed-variant": "#524249",
+                        "on-primary-fixed": "#3f0016",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1b1b1c",
+                        "surface-container-low": "#f6f3f4",
+                        "inverse-primary": "#ffb2bf",
+                        "tertiary-fixed": "#f4dce4",
+                        "surface-variant": "#e5e2e3",
+                        "on-primary-container": "#fff2f3",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed": "#25181e",
+                        "on-secondary-fixed": "#3e0020",
+                        "on-error": "#ffffff",
+                        "surface": "#fcf8f9",
+                        "primary-container": "#d81b60",
+                        "outline-variant": "#e3bdc3",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#d7c1c8",
+                        "primary-fixed-dim": "#ffb2bf",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb0cc",
+                        "primary-fixed": "#ffd9de",
+                        "surface-container": "#f0edee",
+                        "on-primary-fixed-variant": "#90003b",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fcf8f9",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f3f0f1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "16px",
+                        "section-gap-md": "80px",
+                        "section-gap-lg": "120px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Be Vietnam Pro"],
+                        "display-lg": ["Be Vietnam Pro"],
+                        "headline-md": ["Be Vietnam Pro"],
+                        "label-bold": ["Manrope"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-xl": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .filter-btn.active {
+            background-color: theme('colors.primary');
+            color: theme('colors.on-primary');
+            border-color: theme('colors.primary');
+        }
+        .filter-btn:not(.active) {
+            background-color: theme('colors.surface-container-lowest');
+            color: theme('colors.secondary');
+            border-color: theme('colors.secondary-fixed');
+        }
+        .event-gallery .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+        .event-gallery .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(176,0,74,0.4);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .event-gallery .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .event-gallery .gallery-zoom {
+            background: white;
+            color: #b0004a;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            font-size: 1.25rem;
+        }
+    </style>
+<link href="../css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Loading Screen -->
+<div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+        <h2 class="loading-logo text-white">Candy Catering</h2>
+        <div class="loading-bar">
+            <div class="loading-bar-fill"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Top Navigation -->
+<header class="bg-surface shadow-sm sticky top-0 z-50 w-full transition-all duration-300">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary flex items-center gap-2 font-bold" href="../index.html">
+                Candy Catering
+            </a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<ul class="flex gap-6 font-title-lg text-title-lg">
+<li><a class="text-secondary hover:text-primary transition-colors" href="../index.html">Trang chủ</a></li>
+<li><a class="text-secondary hover:text-primary transition-colors" href="../services/index.html">Dịch vụ</a></li>
+<li><a class="text-primary border-b-2 border-primary pb-1" href="index.html">Thư viện</a></li>
+<li><a class="text-secondary hover:text-primary transition-colors" href="../pricing/index.html">Báo giá</a></li>
+<li><a class="text-secondary hover:text-primary transition-colors" href="../blog/index.html">Tin tức</a></li>
+<li><a class="text-secondary hover:text-primary transition-colors" href="../contact/index.html">Liên hệ</a></li>
+</ul>
+<button class="bg-gradient-to-r from-primary to-secondary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-full hover:opacity-90 transition-opacity min-h-[48px] shadow-sm">
+                    Nhận báo giá
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="py-16 md:py-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-md">
+                Thư Viện Ảnh Sự Kiện
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-stack-md leading-relaxed">
+                Khám phá những khoảnh khắc tuyệt vời từ các sự kiện mà Candy Catering đã đồng hành. Từ tiệc trà nhẹ nhàng đến những buổi khai trương hoành tráng, chúng tôi mang đến trải nghiệm ẩm thực đẳng cấp và tinh tế.
+            </p>
+<div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+</section>
+
+<!-- Gallery Section -->
+<section class="pb-16 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<!-- Filters -->
+<div class="flex flex-wrap justify-center gap-4 mb-12">
+<button class="filter-btn active border px-6 py-3 rounded-full font-label-bold text-label-bold transition-colors min-h-[48px]" data-filter="all">Tất cả (77)</button>
+<button class="filter-btn border px-6 py-3 rounded-full font-label-bold text-label-bold transition-colors min-h-[48px]" data-filter="teabreak">Tea Break</button>
+<button class="filter-btn border px-6 py-3 rounded-full font-label-bold text-label-bold transition-colors min-h-[48px]" data-filter="events">Sự kiện công ty</button>
+<button class="filter-btn border px-6 py-3 rounded-full font-label-bold text-label-bold transition-colors min-h-[48px]" data-filter="opening">Khai trương</button>
+<button class="filter-btn border px-6 py-3 rounded-full font-label-bold text-label-bold transition-colors min-h-[48px]" data-filter="birthday">Sinh nhật</button>
+</div>
+
+<!-- Dynamic Masonry Grid (Rendered by JS) -->
+<div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6" id="gallery-grid"></div>
+
+<!-- Load More Controls -->
+<div class="mt-12 text-center" id="loadMoreWrap">
+    <button id="loadMoreBtn" class="bg-surface-container-lowest border-2 border-primary text-primary font-label-bold text-label-bold px-8 py-3 rounded-full hover:bg-primary-fixed transition-colors min-h-[48px] inline-flex items-center shadow-sm">
+        <span class="material-symbols-outlined mr-2">images</span> Xem Thêm Ảnh
+    </button>
+    <p class="text-sm text-on-surface-variant mt-4 font-medium">
+        Đang hiển thị <span id="galleryShownCount" class="font-bold text-primary">0</span> / 77 hình ảnh
+    </p>
+</div>
+</section>
+
+<!-- Customer Events Section -->
+<section class="py-16 bg-surface-container-low border-t border-outline-variant/20" id="events">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+        <div class="text-center mb-12 fade-in">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary font-label-bold text-label-bold mb-3 uppercase tracking-wider text-xs">Sự Kiện Khách Hàng</span>
+            <h2 class="font-display-lg text-display-lg-mobile md:text-headline-xl text-on-surface mb-4">Tiệc Thực Tế Của Khách Hàng</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Mỗi khách hàng là một câu chuyện — Bấm vào từng thẻ để xem album ảnh riêng biệt</p>
+        </div>
+
+        <div class="space-y-6 max-w-4xl mx-auto">
+            <!-- Event Card 1 -->
+            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+                <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-lg">L</div>
+                        <div>
+                            <h3 class="font-bold text-on-surface text-lg">Tiệc Sinh Nhật Công Ty LeadSgo</h3>
+                            <div class="flex gap-4 text-xs text-on-surface-variant mt-1">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 15/12/2025</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> Thanh Xuân, Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                </div>
+                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="event-gallery" style="display: contents;">
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-10.jpg" alt="Sinh nhật LeadSgo 1">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-12.jpg" alt="Sinh nhật LeadSgo 2">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-13.jpg" alt="Sinh nhật LeadSgo 3">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-14.jpg" alt="Sinh nhật LeadSgo 4">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-15.jpg" alt="Sinh nhật LeadSgo 5">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-16.jpg" alt="Sinh nhật LeadSgo 6">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+                <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-yellow-500/10 text-yellow-700 flex items-center justify-center font-bold text-lg">K</div>
+                        <div>
+                            <h3 class="font-bold text-on-surface text-lg">Sự Kiện Ra Mắt Sản Phẩm KEYSHIN</h3>
+                            <div class="flex gap-4 text-xs text-on-surface-variant mt-1">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 15/03/2026</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> TTTM Vincom, Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                </div>
+                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="event-gallery" style="display: contents;">
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-19.jpg" alt="Sự kiện KEYSHIN 1">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-21.jpg" alt="Sự kiện KEYSHIN 2">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-22.jpg" alt="Sự kiện KEYSHIN 3">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-23.jpg" alt="Sự kiện KEYSHIN 4">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-24.jpg" alt="Sự kiện KEYSHIN 5">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-25.jpg" alt="Sự kiện KEYSHIN 6">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+                <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-green-500/10 text-green-700 flex items-center justify-center font-bold text-lg">T</div>
+                        <div>
+                            <h3 class="font-bold text-on-surface text-lg">Tea Break Hội Nghị Thường Niên</h3>
+                            <div class="flex gap-4 text-xs text-on-surface-variant mt-1">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 15/03/2026</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> Bệnh viện Thanh Nhàn, Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                </div>
+                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="event-gallery" style="display: contents;">
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-26.jpg" alt="Hội nghị thường niên 1">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-27.jpg" alt="Hội nghị thường niên 2">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-28.jpg" alt="Hội nghị thường niên 3">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-29.jpg" alt="Hội nghị thường niên 4">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 4 -->
+            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+                <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-pink-500/10 text-pink-700 flex items-center justify-center font-bold text-lg">H</div>
+                        <div>
+                            <h3 class="font-bold text-on-surface text-lg">Tiệc Sinh Nhật Bé Hà My</h3>
+                            <div class="flex gap-4 text-xs text-on-surface-variant mt-1">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 10/10/2025</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> Hà Đông, Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                </div>
+                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="event-gallery" style="display: contents;">
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-30.jpg" alt="Sinh nhật Bé Hà My 1">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-31.jpg" alt="Sinh nhật Bé Hà My 2">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-33.jpg" alt="Sinh nhật Bé Hà My 3">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-34.jpg" alt="Sinh nhật Bé Hà My 4">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Card 5 -->
+            <div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/15 overflow-hidden fade-in">
+                <div class="p-6 flex justify-between items-center cursor-pointer select-none" onclick="toggleEvent(this)">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-purple-500/10 text-purple-700 flex items-center justify-center font-bold text-lg">T</div>
+                        <div>
+                            <h3 class="font-bold text-on-surface text-lg">Tiệc Sinh Nhật Bé Trâm Anh</h3>
+                            <div class="flex gap-4 text-xs text-on-surface-variant mt-1">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 21/02/2026</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">location_on</span> Cầu Giấy, Hà Nội</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                </div>
+                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="event-gallery" style="display: contents;">
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-35.jpg" alt="Sinh nhật Bé Trâm Anh 1">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-37.jpg" alt="Sinh nhật Bé Trâm Anh 2">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-38.jpg" alt="Sinh nhật Bé Trâm Anh 3">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                        <div class="gallery-item aspect-square">
+                            <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-41.jpg" alt="Sinh nhật Bé Trâm Anh 4">
+                            <div class="gallery-overlay"><div class="gallery-zoom"><span class="material-symbols-outlined">zoom_in</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant py-16 px-margin-mobile md:px-gutter mt-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto font-body-md text-body-md">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-2">
+<a class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary font-bold mb-stack-md block" href="../index.html">
+                    Candy Catering
+                </a>
+<p class="text-on-surface-variant max-w-md mb-stack-md">
+                    Chuyên cung cấp dịch vụ tiệc trà, teabreak, tiệc finger food chuyên nghiệp và đẳng cấp tại Hà Nội.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://web.facebook.com/profile.php?id=100095197116952" target="_blank" title="Facebook">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://zalo.me/0969166453" target="_blank" title="Zalo">
+<span class="material-symbols-outlined">chat_bubble</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="mailto:maihuyentrang1611@gmail.com" title="Email">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1">
+<h4 class="font-headline-md text-headline-md text-primary mb-stack-md text-lg">Dịch Vụ</h4>
+<ul class="space-y-stack-sm flex flex-col">
+<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc cưới</a></li>
+<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc hội nghị</a></li>
+<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc tại gia</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1">
+<h4 class="font-headline-md text-headline-md text-primary mb-stack-md text-lg">Thông Tin</h4>
+<ul class="space-y-stack-sm flex flex-col">
+<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Về chúng tôi</a></li>
+<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Chính sách bảo mật</a></li>
+<li><a class="text-on-secondary-fixed-variant hover:text-primary transition-all underline opacity-80 hover:opacity-100" href="#">Điều khoản dịch vụ</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-12 pt-6 border-t border-surface-variant text-center text-on-surface-variant text-sm">
+<p>© 2024 Tiệc Lưu Động Candy. All rights reserved.</p>
+</div>
+</footer>
+<script src="../js/main.js"></script>
+</body></html>

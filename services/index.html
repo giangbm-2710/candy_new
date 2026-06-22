@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="vi"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Dịch Vụ Tiệc Lưu Động Chuyên Nghiệp | Candy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&amp;family=Manrope:wght@700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "secondary-container": "#ff73ae",
+                "inverse-surface": "#303031",
+                "on-secondary-fixed-variant": "#890f50",
+                "tertiary": "#64535a",
+                "surface-container-high": "#eae7e8",
+                "error": "#ba1a1a",
+                "surface-container-highest": "#e5e2e3",
+                "on-surface": "#1b1b1c",
+                "error-container": "#ffdad6",
+                "on-secondary-container": "#740041",
+                "on-surface-variant": "#5a4044",
+                "on-tertiary-container": "#fff2f5",
+                "on-error-container": "#93000a",
+                "outline-variant": "#e3bdc3",
+                "on-primary-fixed": "#3f0016",
+                "on-secondary": "#ffffff",
+                "inverse-primary": "#ffb2bf",
+                "on-primary-fixed-variant": "#90003b",
+                "secondary-fixed": "#ffd9e4",
+                "surface-tint": "#bc004f",
+                "surface-bright": "#fcf8f9",
+                "surface-container": "#f0edee",
+                "on-background": "#1b1b1c",
+                "on-tertiary-fixed": "#25181e",
+                "on-primary-container": "#fff2f3",
+                "surface-variant": "#e5e2e3",
+                "on-error": "#ffffff",
+                "inverse-on-surface": "#f3f0f1",
+                "tertiary-container": "#7e6b72",
+                "surface": "#fcf8f9",
+                "tertiary-fixed-dim": "#d7c1c8",
+                "surface-container-low": "#f6f3f4",
+                "primary-fixed": "#ffd9de",
+                "background": "#fcf8f9",
+                "secondary": "#a82d68",
+                "surface-dim": "#dcd9da",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "primary-fixed-dim": "#ffb2bf",
+                "on-secondary-fixed": "#3e0020",
+                "on-tertiary-fixed-variant": "#524249",
+                "outline": "#8e6f74",
+                "secondary-fixed-dim": "#ffb0cc",
+                "tertiary-fixed": "#f4dce4",
+                "on-primary": "#ffffff",
+                "primary": "#b0004a",
+                "primary-container": "#d81b60"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "section-gap-lg": "120px",
+                "section-gap-md": "80px",
+                "container-max": "1200px",
+                "stack-sm": "8px",
+                "stack-md": "16px",
+                "margin-mobile": "16px",
+                "gutter": "24px"
+        },
+        "fontFamily": {
+                "display-lg": [
+                        "Be Vietnam Pro"
+                ],
+                "body-lg": [
+                        "Be Vietnam Pro"
+                ],
+                "body-md": [
+                        "Be Vietnam Pro"
+                ],
+                "headline-xl": [
+                        "Be Vietnam Pro"
+                ],
+                "headline-md": [
+                        "Be Vietnam Pro"
+                ],
+                "label-bold": [
+                        "Manrope"
+                ],
+                "display-lg-mobile": [
+                        "Be Vietnam Pro"
+                ]
+        },
+        "fontSize": {
+                "display-lg": [
+                        "56px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-xl": [
+                        "40px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-bold": [
+                        "14px",
+                        {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-lg-mobile": [
+                        "36px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "800"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .service-card:hover img {
+            transform: scale(1.05);
+        }
+        .service-card {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .service-card:hover {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            transform: translateY(-4px);
+        }
+    </style>
+<link href="../css/custom.css" rel="stylesheet">
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+
+<!-- Loading Screen -->
+<div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+        <h2 class="loading-logo text-white">Candy Catering</h2>
+        <div class="loading-bar">
+            <div class="loading-bar-fill"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-container shadow-sm dark:shadow-none transition-all duration-300 w-full" id="main-header">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand Logo -->
+<a class="font-headline-xl text-headline-xl text-primary dark:text-primary-fixed truncate" href="../index.html">
+                Candy
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="../index.html">Trang chủ</a>
+<a aria-current="page" class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-bold text-label-bold" href="index.html">Dịch vụ</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="../gallery/index.html">Thư viện</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="../pricing/index.html">Báo giá</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="../blog/index.html">Tin tức</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold" href="../contact/index.html">Liên hệ</a>
+</nav>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-fixed-dim transition-colors shadow-sm scale-95 duration-200 hover:scale-100">
+                    Nhận báo giá
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Header -->
+<section class="pt-16 pb-12 md:pt-24 md:pb-16 px-margin-mobile md:px-gutter text-center max-w-container-max mx-auto">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background mb-4 text-primary">
+                Dịch Vụ Tiệc Lưu Động Chuyên Nghiệp
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Trải nghiệm ẩm thực đẳng cấp và dịch vụ hoàn hảo tận nơi. Chúng tôi mang đến những giải pháp tiệc đa dạng, phù hợp với mọi quy mô và phong cách sự kiện của bạn.
+            </p>
+</section>
+<!-- Services Grid -->
+<section class="pb-section-gap-md md:pb-section-gap-lg px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="service-card bg-surface rounded-xl overflow-hidden border border-outline-variant transition-all duration-300 flex flex-col group cursor-pointer">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<img alt="Tea Break Hội Nghị" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="A beautifully arranged tea break table at a corporate conference. High-key lighting, modern bright elegant aesthetic. Delicate pastries, fresh fruit, and premium tea setups displayed on tiered stands. The atmosphere is professional, sophisticated, and pristine, utilizing a color palette of crisp whites, soft golds, and fresh natural tones." src="../imgs/tiec-banh-tra-ha-noi-6.jpg">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Tea Break Hội Nghị</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Sang trọng, tinh tế cho sự kiện chuyên nghiệp. Menu đa dạng với các loại bánh ngọt, trái cây tươi và đồ uống hảo hạng.
+                        </p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-primary">Từ 150.000đ/người</span>
+<a class="text-primary font-label-bold text-label-bold flex items-center gap-1 group-hover:underline" href="#">
+                                Xem chi tiết
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="service-card bg-surface rounded-xl overflow-hidden border border-outline-variant transition-all duration-300 flex flex-col group cursor-pointer">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<img alt="Tiệc Buffet Cưới" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="An elegant outdoor wedding buffet setup. Modern minimal aesthetic with a high-end feel. Tables draped in crisp white linens, adorned with subtle floral arrangements. Gleaming chafing dishes and beautifully plated food under soft, natural daylight. The mood is romantic, organized, and welcoming, featuring bright whites and warm golden accents." src="../imgs/tiec-teabreak-ha-noi-candy-16.jpg">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Tiệc Buffet Cưới</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Đa dạng món ăn, không gian mở thoáng đãng. Sự lựa chọn hoàn hảo cho ngày trọng đại với thực đơn phong phú từ Á sang Âu.
+                        </p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-primary">Từ 350.000đ/người</span>
+<a class="text-primary font-label-bold text-label-bold flex items-center gap-1 group-hover:underline" href="#">
+                                Xem chi tiết
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="service-card bg-surface rounded-xl overflow-hidden border border-outline-variant transition-all duration-300 flex flex-col group cursor-pointer">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<img alt="Tiệc Bàn Truyền Thống" class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105" data-alt="A formal set menu dining table in a private home setting. Editorial elegance, bright and clean photography. Fine china, polished silverware, and crystal glasses arranged meticulously on a white tablecloth. A beautifully plated modern dish sits at the center. The aesthetic is luxurious, intimate, and highly refined." src="../imgs/tiec-teabreak-ha-noi-candy-19.jpg">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-background mb-2 group-hover:text-primary transition-colors">Tiệc Bàn Tại Gia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                            Ấm cúng, gần gũi với hương vị quen thuộc. Phục vụ chu đáo tận nhà, mang đến bữa tiệc trọn vẹn bên gia đình và người thân.
+                        </p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-primary">Từ 2.500.000đ/bàn</span>
+<a class="text-primary font-label-bold text-label-bold flex items-center gap-1 group-hover:underline" href="#">
+                                Xem chi tiết
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant dark:border-outline mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter py-section-gap-md px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<!-- Brand & Info -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<a class="font-headline-xl text-headline-xl text-primary dark:text-primary-fixed mb-2" href="#">Candy</a>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Mang đến trải nghiệm ẩm thực tinh tế và dịch vụ chuyên nghiệp cho mọi sự kiện của bạn tại Hà Nội.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-primary dark:text-inverse-primary mb-2">Dịch Vụ</h4>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc cưới</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc hội nghị</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Tiệc tại gia</a>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-primary dark:text-inverse-primary mb-2">Công Ty</h4>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Về chúng tôi</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Chính sách bảo mật</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-all underline opacity-80 hover:opacity-100" href="#">Điều khoản dịch vụ</a>
+</div>
+<!-- Contact -->
+<div class="col-span-1 flex flex-col gap-3">
+<h4 class="font-label-bold text-label-bold text-primary dark:text-inverse-primary mb-2">Liên Hệ</h4>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>Thanh Xuân / Cầu Giấy, Hà Nội</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<span>
+<a href="tel:0969166453" class="hover:text-primary transition-colors">0969 166 453</a><br>
+<a href="tel:0978902394" class="hover:text-primary transition-colors">0978 902 394</a>
+</span>
+</div>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-primary text-xl">mail</span>
+<span><a href="mailto:maihuyentrang1611@gmail.com" class="hover:text-primary transition-colors text-sm break-all">maihuyentrang1611@gmail.com</a></span>
+</div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="border-t border-outline-variant/30 py-6 px-margin-mobile md:px-gutter text-center">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                © 2024 Tiệc Lưu Động Candy. All rights reserved.
+            </p>
+</div>
+</footer>
+<script src="../js/main.js"></script>
+</body></html>
