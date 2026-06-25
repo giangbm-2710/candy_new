@@ -1,8 +1,64 @@
 <!DOCTYPE html>
 <html lang="vi"><head>
 <meta charset="utf-8"/>
+    <!-- Favicon Configuration -->
+    <link rel="icon" type="image/png" href="https://tiecluudongcandy.site/imgs/logo.png">
+    <link rel="apple-touch-icon" href="https://tiecluudongcandy.site/imgs/logo.png">
+
+    <!-- Google Search Console Verification Placeholder (Replace with your own code when ready) -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_TOKEN_HERE" /> -->
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC1FG3JGZG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MC1FG3JGZG');
+    </script>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Thư Viện Ảnh Sự Kiện - Candy Catering</title>
+<title>Hình Ảnh Thực Tế Tiệc Trà & Sự Kiện Đã Tổ Chức | Candy Catering</title>
+<meta content="Thư viện hình ảnh thực tế các buổi tiệc teabreak văn phòng, tiệc khai trương showroom, tiệc sinh nhật sang trọng do Candy Catering thực hiện tại Hà Nội." name="description">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tiecluudongcandy.site/gallery/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tiecluudongcandy.site/gallery/">
+<meta property="og:title" content="Hình Ảnh Thực Tế Tiệc Trà & Sự Kiện Đã Tổ Chức | Candy Catering">
+<meta property="og:description" content="Thư viện hình ảnh thực tế các buổi tiệc teabreak văn phòng, tiệc khai trương showroom, tiệc sinh nhật sang trọng do Candy Catering thực hiện tại Hà Nội.">
+<meta property="og:image" content="https://tiecluudongcandy.site/imgs/tiec-teabreak-ha-noi-candy-10.jpg">
+<meta property="og:site_name" content="Candy Catering">
+<meta property="og:locale" content="vi_VN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://tiecluudongcandy.site/gallery/">
+<meta name="twitter:title" content="Hình Ảnh Thực Tế Tiệc Trà & Sự Kiện Đã Tổ Chức | Candy Catering">
+<meta name="twitter:description" content="Thư viện hình ảnh thực tế các buổi tiệc teabreak văn phòng, tiệc khai trương showroom, tiệc sinh nhật sang trọng do Candy Catering thực hiện tại Hà Nội.">
+<meta name="twitter:image" content="https://tiecluudongcandy.site/imgs/tiec-teabreak-ha-noi-candy-10.jpg">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "@id": "https://tiecluudongcandy.site/gallery/#gallery",
+  "name": "Thư viện hình ảnh Candy Catering",
+  "url": "https://tiecluudongcandy.site/gallery/",
+  "description": "Thư viện hình ảnh thực tế các buổi tiệc teabreak văn phòng, tiệc khai trương showroom, tiệc sinh nhật sang trọng do Candy Catering thực hiện tại Hà Nội.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Candy Catering",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tiecluudongcandy.site/imgs/logo.png"
+    }
+  }
+}
+</script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -151,15 +207,46 @@
 <!-- Loading Screen -->
 <div id="loading-screen" class="loading-screen">
     <div class="loading-content">
-        <h2 class="loading-logo text-white">Candy Catering</h2>
+        <div class="loading-logo text-white">Candy Catering</div>
         <div class="loading-bar">
             <div class="loading-bar-fill"></div>
         </div>
     </div>
 </div>
 
-<!-- Header Placeholder -->
-<div id="header-placeholder"></div>
+<!-- Main Header -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-container shadow-sm dark:shadow-none transition-all duration-300 w-full" id="main-header">
+    <div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+        <!-- Brand Logo -->
+        <a class="flex items-center gap-2 font-display-lg text-headline-md md:text-headline-md font-bold text-primary dark:text-primary-fixed shrink-0 whitespace-nowrap" href="../index.html">
+            <img src="../imgs/logo.png" alt="Logo Candy Catering" class="h-10 w-auto object-contain">
+            <span class="whitespace-nowrap">Candy Catering</span>
+        </a>
+        <!-- Navigation Links (Desktop) -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../index.html">Trang chủ</a>
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../services/index.html">Dịch vụ</a>
+            <a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-bold text-label-bold hover:text-primary transition-colors scale-95 duration-200" href="../gallery/index.html" aria-current="page">Thư viện</a>
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../pricing/index.html">Báo giá</a>
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../blog/index.html">Tin tức</a>
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../contact/index.html">Liên hệ</a>
+        </nav>
+        <!-- Trailing Action -->
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold flex items-center gap-2 whitespace-nowrap scale-95 duration-200 hover:scale-100" href="tel:0969166453">
+                <i class="fas fa-phone-alt text-sm"></i>
+                <span>0969 166 453</span>
+            </a>
+            <button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-fixed-dim transition-colors shadow-sm scale-95 duration-200 hover:scale-100 whitespace-nowrap">
+                Nhận báo giá
+            </button>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </div>
+</header>
 <main>
 <!-- Hero Section -->
 <section class="py-16 md:py-24 px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center">
@@ -220,9 +307,9 @@
                             </div>
                         </div>
                     </div>
-                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                    <button class="event-toggle w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-primary transition-colors shadow-sm pointer-events-none"><span class="material-symbols-outlined">expand_more</span></button>
                 </div>
-                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="event-gallery" style="display: contents;">
                         <div class="gallery-item aspect-square">
                             <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-10.jpg" alt="Sinh nhật LeadSgo 1">
@@ -265,9 +352,9 @@
                             </div>
                         </div>
                     </div>
-                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                    <button class="event-toggle w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-primary transition-colors shadow-sm pointer-events-none"><span class="material-symbols-outlined">expand_more</span></button>
                 </div>
-                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="event-gallery" style="display: contents;">
                         <div class="gallery-item aspect-square">
                             <img class="w-full h-full object-cover rounded-lg" src="../imgs/tiec-teabreak-ha-noi-candy-19.jpg" alt="Sự kiện KEYSHIN 1">
@@ -310,7 +397,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                    <button class="event-toggle w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-primary transition-colors shadow-sm pointer-events-none"><span class="material-symbols-outlined">expand_more</span></button>
                 </div>
                 <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="event-gallery" style="display: contents;">
@@ -347,7 +434,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                    <button class="event-toggle w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-primary transition-colors shadow-sm pointer-events-none"><span class="material-symbols-outlined">expand_more</span></button>
                 </div>
                 <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="event-gallery" style="display: contents;">
@@ -384,7 +471,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="event-toggle text-secondary"><span class="material-symbols-outlined">expand_more</span></button>
+                    <button class="event-toggle w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-primary transition-colors shadow-sm pointer-events-none"><span class="material-symbols-outlined">expand_more</span></button>
                 </div>
                 <div class="event-body hidden p-6 border-t border-outline-variant/10 bg-surface/50 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="event-gallery" style="display: contents;">
@@ -420,7 +507,53 @@
     </div>
 </section>
 </main>
-<!-- Footer Placeholder -->
-<div id="footer-placeholder"></div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo-text">
+                    <img src="../imgs/logo.png" alt="Logo Candy" style="height:60px;vertical-align:middle;object-fit:contain;display:inline-block;margin-right:8px;">Candy
+                </span>
+                <p>
+                    <strong>Tiệc Lưu Động Candy</strong> — Dịch vụ tiệc bánh trà cao cấp tại TP.Hà Nội.
+                    Chuyên cung cấp set up tea break cho công ty, sự kiện, sinh nhật,
+                    khai trương với phong cách sang trọng và chuyên nghiệp.
+                </p>
+            </div>
+            <div>
+                <h4>Dịch Vụ</h4>
+                <ul class="footer-links">
+                    <li><a href="../services/index.html"><i class="fas fa-angle-right"></i> Tea Break Công Ty</a></li>
+                    <li><a href="../services/index.html"><i class="fas fa-angle-right"></i> Tiệc Sinh Nhật</a></li>
+                    <li><a href="../services/index.html"><i class="fas fa-angle-right"></i> Sự Kiện Khai Trương</a></li>
+                    <li><a href="../services/index.html"><i class="fas fa-angle-right"></i> Tiệc Gia Đình</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Liên Kết</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html"><i class="fas fa-angle-right"></i> Trang Chủ</a></li>
+                    <li><a href="../index.html#about"><i class="fas fa-angle-right"></i> Giới Thiệu</a></li>
+                    <li><a href="../gallery/index.html"><i class="fas fa-angle-right"></i> Thư Viện Ảnh</a></li>
+                    <li><a href="../pricing/index.html"><i class="fas fa-angle-right"></i> Bảng Giá</a></li>
+                    <li><a href="../contact/index.html"><i class="fas fa-angle-right"></i> Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Liên Hệ</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:0969166453"><i class="fas fa-phone"></i> 0969 166 453 / 0978 902 394</a></li>
+                    <li><a href="mailto:maihuyentrang1611@gmail.com"><i class="fas fa-envelope"></i> maihuyentrang1611@gmail.com</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> TP Hà Nội</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> 8:00 - 21:00 hàng ngày</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <a href="../index.html">Tiệc Lưu Động Candy</a>. Tất cả quyền được bảo lưu. | Hotline: <a href="tel:0969166453">0969 166 453</a></p>
+        </div>
+    </div>
+</footer>
 <script src="../js/main.js"></script>
 </body></html>

@@ -1,8 +1,64 @@
 <!DOCTYPE html>
 <html lang="vi"><head>
 <meta charset="utf-8"/>
+    <!-- Favicon Configuration -->
+    <link rel="icon" type="image/png" href="https://tiecluudongcandy.site/imgs/logo.png">
+    <link rel="apple-touch-icon" href="https://tiecluudongcandy.site/imgs/logo.png">
+
+    <!-- Google Search Console Verification Placeholder (Replace with your own code when ready) -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_TOKEN_HERE" /> -->
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC1FG3JGZG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MC1FG3JGZG');
+    </script>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Tin tức &amp; Sự kiện - Candy - Tiệc Bánh Trà &amp; Teabreak Hà Nội</title>
+<title>Tin tức & Sự kiện Teabreak | Candy Catering Blog</title>
+<meta content="Cập nhật những xu hướng tiệc teabreak văn phòng mới nhất, mẹo tổ chức tiệc ngọt sự kiện và cẩm nang từ chuyên gia Candy Catering tại Hà Nội." name="description">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tiecluudongcandy.site/blog/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tiecluudongcandy.site/blog/">
+<meta property="og:title" content="Tin tức & Sự kiện Teabreak | Candy Catering Blog">
+<meta property="og:description" content="Cập nhật những xu hướng tiệc teabreak văn phòng mới nhất, mẹo tổ chức tiệc ngọt sự kiện và cẩm nang từ chuyên gia Candy Catering tại Hà Nội.">
+<meta property="og:image" content="https://tiecluudongcandy.site/imgs/tiec-teabreak-ha-noi-candy-21.jpg">
+<meta property="og:site_name" content="Candy Catering">
+<meta property="og:locale" content="vi_VN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://tiecluudongcandy.site/blog/">
+<meta name="twitter:title" content="Tin tức & Sự kiện Teabreak | Candy Catering Blog">
+<meta name="twitter:description" content="Cập nhật những xu hướng tiệc teabreak văn phòng mới nhất, mẹo tổ chức tiệc ngọt sự kiện và cẩm nang từ chuyên gia Candy Catering tại Hà Nội.">
+<meta name="twitter:image" content="https://tiecluudongcandy.site/imgs/tiec-teabreak-ha-noi-candy-21.jpg">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "https://tiecluudongcandy.site/blog/#blog",
+  "name": "Candy Catering Blog",
+  "url": "https://tiecluudongcandy.site/blog/",
+  "description": "Cập nhật những xu hướng tiệc teabreak văn phòng mới nhất, mẹo tổ chức tiệc ngọt sự kiện và cẩm nang từ chuyên gia Candy Catering tại Hà Nội.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Candy Catering",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tiecluudongcandy.site/imgs/logo.png"
+    }
+  }
+}
+</script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;800&amp;family=Manrope:wght@700&amp;display=swap" rel="stylesheet"/>
@@ -170,15 +226,46 @@
 <!-- Loading Screen -->
 <div id="loading-screen" class="loading-screen">
     <div class="loading-content">
-        <h2 class="loading-logo text-white">Candy Catering</h2>
+        <div class="loading-logo text-white">Candy Catering</div>
         <div class="loading-bar">
             <div class="loading-bar-fill"></div>
         </div>
     </div>
 </div>
 
-<!-- Header Placeholder -->
-<div id="header-placeholder"></div>
+<!-- Main Header -->
+<header class="sticky top-0 z-50 bg-surface dark:bg-surface-container shadow-sm dark:shadow-none transition-all duration-300 w-full" id="main-header">
+    <div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+        <!-- Brand Logo -->
+        <a class="flex items-center gap-2 font-display-lg text-headline-md md:text-headline-md font-bold text-primary dark:text-primary-fixed shrink-0 whitespace-nowrap" href="../index.html">
+            <img src="../imgs/logo.png" alt="Logo Candy Catering" class="h-10 w-auto object-contain">
+            <span class="whitespace-nowrap">Candy Catering</span>
+        </a>
+        <!-- Navigation Links (Desktop) -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../index.html">Trang chủ</a>
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../services/index.html">Dịch vụ</a>
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../gallery/index.html">Thư viện</a>
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../pricing/index.html">Báo giá</a>
+            <a class="text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 font-label-bold text-label-bold hover:text-primary transition-colors scale-95 duration-200" href="../blog/index.html" aria-current="page">Tin tức</a>
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold scale-95 duration-200" href="../contact/index.html">Liên hệ</a>
+        </nav>
+        <!-- Trailing Action -->
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed transition-colors font-label-bold text-label-bold flex items-center gap-2 whitespace-nowrap scale-95 duration-200 hover:scale-100" href="tel:0969166453">
+                <i class="fas fa-phone-alt text-sm"></i>
+                <span>0969 166 453</span>
+            </a>
+            <button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-fixed-dim transition-colors shadow-sm scale-95 duration-200 hover:scale-100 whitespace-nowrap">
+                Nhận báo giá
+            </button>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </div>
+</header>
 <!-- Main Content -->
 <main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap-md md:py-section-gap-lg">
 <!-- Header -->
@@ -195,7 +282,7 @@
 <div class="p-gutter">
 <div class="flex items-center gap-stack-sm mb-stack-md">
 <span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold px-3 py-1 rounded-full text-xs">Xu hướng</span>
-<span class="text-on-surface-variant text-sm flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 15/05/2024</span>
+<span class="text-on-surface-variant text-sm flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 15/06/2026</span>
 </div>
 <h2 class="font-headline-xl text-headline-xl text-primary mb-stack-sm hover:text-secondary cursor-pointer transition-colors">7 Xu hướng Teabreak Văn phòng Nổi bật Nhất Năm 2024</h2>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md line-clamp-3">Khám phá những phong cách thiết kế thực đơn và trang trí tiệc trà đang được các doanh nghiệp ưa chuộng nhất hiện nay, từ xu hướng healthy đến minimalism thanh lịch.</p>
@@ -208,7 +295,7 @@
 <div class="p-stack-md flex-grow flex flex-col">
 <div class="flex items-center gap-stack-sm mb-stack-sm">
 <span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-bold px-3 py-1 rounded-full text-xs">Mẹo tổ chức</span>
-<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 10/05/2024</span>
+<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 10/06/2026</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm hover:text-primary cursor-pointer transition-colors text-lg font-bold">Bí quyết lên thực đơn Teabreak phù hợp cho mọi sự kiện</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow line-clamp-2">Cách chọn bánh ngọt, trái cây và đồ uống sao cho vừa lòng mọi khách mời, từ hội thảo đến tiệc nội bộ.</p>
@@ -221,7 +308,7 @@
 <div class="p-stack-md flex-grow flex flex-col">
 <div class="flex items-center gap-stack-sm mb-stack-sm">
 <span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold px-3 py-1 rounded-full text-xs">Sự kiện</span>
-<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 05/05/2024</span>
+<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 05/06/2026</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm hover:text-primary cursor-pointer transition-colors text-lg font-bold">Candy Catering đồng hành cùng Tech Summit 2024</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow line-clamp-2">Nhìn lại những khoảnh khắc ấn tượng và thực đơn đặc biệt được thiết kế riêng cho hơn 500 khách mời sự kiện công nghệ.</p>
@@ -234,7 +321,7 @@
 <div class="p-stack-md flex-grow flex flex-col">
 <div class="flex items-center gap-stack-sm mb-stack-sm">
 <span class="bg-secondary-fixed text-on-secondary-fixed font-label-bold px-3 py-1 rounded-full text-xs">Báo giá</span>
-<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 02/05/2024</span>
+<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 28/05/2026</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm hover:text-primary cursor-pointer transition-colors text-lg font-bold">Chi phí đặt tiệc ngọt teabreak cho 100 người tại Hà Nội</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow line-clamp-2">Bảng dự toán chi phí chi tiết tiệc trà teabreak cho 100 khách. Các lựa chọn menu từ tiết kiệm đến cao cấp trọn gói.</p>
@@ -247,7 +334,7 @@
 <div class="p-stack-md flex-grow flex flex-col">
 <div class="flex items-center gap-stack-sm mb-stack-sm">
 <span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-bold px-3 py-1 rounded-full text-xs">Cẩm nang</span>
-<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 25/04/2024</span>
+<span class="text-on-surface-variant text-xs flex items-center gap-1"><span class="material-symbols-outlined text-xs">calendar_today</span> 15/05/2026</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm hover:text-primary cursor-pointer transition-colors text-lg font-bold">Quy trình setup tiệc teabreak chuẩn 5 sao chuyên nghiệp</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md flex-grow line-clamp-2">Tìm hiểu quy trình 5 bước chuẩn bị và trang trí bàn tiệc teabreak chuyên nghiệp giúp nâng tầm giá trị cho mọi sự kiện.</p>
@@ -317,7 +404,53 @@
 </aside>
 </div>
 </main>
-<!-- Footer Placeholder -->
-<div id="footer-placeholder"></div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo-text">
+                    <img src="../imgs/logo.png" alt="Logo Candy" style="height:60px;vertical-align:middle;object-fit:contain;display:inline-block;margin-right:8px;">Candy
+                </span>
+                <p>
+                    <strong>Tiệc Lưu Động Candy</strong> — Dịch vụ tiệc bánh trà cao cấp tại TP.Hà Nội.
+                    Chuyên cung cấp set up tea break cho công ty, sự kiện, sinh nhật,
+                    khai trương với phong cách sang trọng và chuyên nghiệp.
+                </p>
+            </div>
+            <div>
+                <h4>Dịch Vụ</h4>
+                <ul class="footer-links">
+                    <li><a href="../services/index.html"><i class="fas fa-angle-right"></i> Tea Break Công Ty</a></li>
+                    <li><a href="../services/index.html"><i class="fas fa-angle-right"></i> Tiệc Sinh Nhật</a></li>
+                    <li><a href="../services/index.html"><i class="fas fa-angle-right"></i> Sự Kiện Khai Trương</a></li>
+                    <li><a href="../services/index.html"><i class="fas fa-angle-right"></i> Tiệc Gia Đình</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Liên Kết</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html"><i class="fas fa-angle-right"></i> Trang Chủ</a></li>
+                    <li><a href="../index.html#about"><i class="fas fa-angle-right"></i> Giới Thiệu</a></li>
+                    <li><a href="../gallery/index.html"><i class="fas fa-angle-right"></i> Thư Viện Ảnh</a></li>
+                    <li><a href="../pricing/index.html"><i class="fas fa-angle-right"></i> Bảng Giá</a></li>
+                    <li><a href="../contact/index.html"><i class="fas fa-angle-right"></i> Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Liên Hệ</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:0969166453"><i class="fas fa-phone"></i> 0969 166 453 / 0978 902 394</a></li>
+                    <li><a href="mailto:maihuyentrang1611@gmail.com"><i class="fas fa-envelope"></i> maihuyentrang1611@gmail.com</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> TP Hà Nội</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> 8:00 - 21:00 hàng ngày</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <a href="../index.html">Tiệc Lưu Động Candy</a>. Tất cả quyền được bảo lưu. | Hotline: <a href="tel:0969166453">0969 166 453</a></p>
+        </div>
+    </div>
+</footer>
 <script src="../js/main.js"></script>
 </body></html>
