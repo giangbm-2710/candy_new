@@ -79,9 +79,86 @@
   },
   "sameAs": [
     "https://web.facebook.com/profile.php?id=100095197116952"
+  ],
+  "description": "Tiệc Lưu Động Candy chuyên cung cấp dịch vụ tiệc bánh trà (teabreak), tiệc ngọt, tiệc sinh nhật, khai trương trọn gói chuyên nghiệp tại Hà Nội.",
+  "paymentAccepted": "Cash, Bank Transfer",
+  "currenciesAccepted": "VND",
+  "areaServed": {
+    "@type": "City",
+    "name": "Hà Nội"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "215"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Dịch vụ tiệc lưu động",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tea Break Công Ty"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tiệc Sinh Nhật"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- FAQPage Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Candy có nhận setup tiệc teabreak tận nơi tại Hà Nội không?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dạ có. Tiệc Lưu Động Candy nhận setup trọn gói tiệc Teabreak, Bánh Trà, Sinh Nhật tận nơi tại TẤT CẢ các quận huyện thuộc khu vực TP. Hà Nội. Chúng tôi mang đến đầy đủ dụng cụ bàn ghế (nếu yêu cầu), khay kệ trang trí sang trọng và nhân sự phục vụ trực tiếp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Chi phí đặt tiệc ngọt teabreak cho công ty là bao nhiêu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chi phí phụ thuộc vào menu bạn chọn, thường dao động từ 50.000đ - 75.000đ/suất. Các gói đều đã bao gồm phí setup khay kệ tiêu chuẩn, hoa tươi trang trí cơ bản và dụng cụ dùng tiệc (đĩa, nĩa, ly giấy/thủy tinh). Phí vận chuyển và hóa đơn VAT 8% (nếu cần) sẽ tính riêng tùy khu vực."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Nên đặt tiệc trước bao nhiêu ngày?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Để đảm bảo chất lượng bánh luôn tươi mới và được setup chu đáo nhất, quý khách vui lòng đặt cọc và chốt thực đơn trước ít nhất 2-3 ngày so với ngày sự kiện diễn ra. Với các sự kiện lớn trên 100 khách, nên đặt trước 5-7 ngày."
+      }
+    }
   ]
 }
 </script>
+
+<!-- Additional SEO Meta -->
+<meta name="author" content="Candy Catering">
+<meta name="geo.region" content="VN-HN">
+<meta name="geo.placename" content="Hà Nội">
+<meta name="keywords" content="tiệc tea break Hà Nội, tiệc ngọt công ty, dịch vụ teabreak hội nghị, đặt tiệc bánh trà, tiệc lưu động Hà Nội, candy catering">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&amp;family=Manrope:wght@700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -257,6 +334,16 @@
     </style>
 <link href="css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preload" as="image" href="imgs/tiec-banh-tra-ha-noi-1.webp">
+<script>
+if (document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0) {
+  const imgs = document.querySelectorAll('img');
+  imgs.forEach(img => {
+    if (img.src.endsWith('.jpg')) img.src = img.src.replace('.jpg', '.webp');
+    img.loading = 'lazy';
+  });
+}
+</script>
 </head>
 <body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
 
@@ -275,7 +362,7 @@
     <div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
         <!-- Brand Logo -->
         <a class="flex items-center gap-2 font-display-lg text-headline-md md:text-headline-md font-bold text-primary dark:text-primary-fixed shrink-0 whitespace-nowrap" href="index.html">
-            <img src="imgs/logo.png" alt="Logo Candy Catering" class="h-10 w-auto object-contain">
+            <img loading="lazy" src="imgs/logo.png" alt="Logo Candy Catering" class="h-10 w-auto object-contain">
             <span class="whitespace-nowrap">Candy Catering</span>
         </a>
         <!-- Navigation Links (Desktop) -->
@@ -293,9 +380,9 @@
                 <i class="fas fa-phone-alt text-sm"></i>
                 <span>0969 166 453</span>
             </a>
-            <button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-fixed-dim transition-colors shadow-sm scale-95 duration-200 hover:scale-100 whitespace-nowrap">
+            <a href="contact/index.html" class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-bold text-label-bold hover:bg-primary-fixed-dim transition-colors shadow-sm scale-95 duration-200 hover:scale-100 whitespace-nowrap inline-block">
                 Nhận báo giá
-            </button>
+            </a>
         </div>
         <!-- Mobile Menu Toggle -->
         <button aria-label="Toggle Menu" class="md:hidden text-primary p-2">
@@ -308,27 +395,27 @@
 <section class="relative min-h-screen flex items-center justify-start overflow-hidden">
 <div class="absolute inset-0 z-0">
     <div class="hero-slide active">
-        <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-1.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 1">
+        <img loading="lazy" class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-1.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 1">
         <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
-        <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-2.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 2">
+        <img loading="lazy" class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-2.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 2">
         <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
-        <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-3.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 3">
+        <img loading="lazy" class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-3.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 3">
         <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
-        <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-4.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 4">
+        <img loading="lazy" class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-4.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 4">
         <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
-        <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-5.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 5">
+        <img loading="lazy" class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-5.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 5">
         <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
     <div class="hero-slide">
-        <img class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-6.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 6">
+        <img loading="lazy" class="w-full h-full object-cover" src="imgs/tiec-banh-tra-ha-noi-6.jpg" alt="Trang trí bàn tiệc bánh trà teabreak cao cấp tại Hà Nội 6">
         <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent"></div>
     </div>
 </div>
@@ -341,12 +428,12 @@
 <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 drop-shadow-md">Tiệc Tea Break &amp; Tiệc Ngọt Chuyên Nghiệp Tại Hà Nội</h1>
 <p class="font-body-lg text-body-lg text-white/90 mb-8 max-w-xl drop-shadow-sm">Giải pháp hoàn hảo mang đến sự tinh tế và đẳng cấp cho mọi sự kiện, từ hội nghị doanh nghiệp đến những buổi tiệc ấm cúng.</p>
 <div class="flex flex-col sm:flex-row gap-4 justify-start">
-<button class="bg-primary-container text-on-primary font-label-bold text-label-bold px-8 py-4 rounded-full hover:bg-primary transition-colors shadow-lg shadow-primary-container/30">
+<a href="contact/index.html" class="bg-primary-container text-on-primary font-label-bold text-label-bold px-8 py-4 rounded-full hover:bg-primary transition-colors shadow-lg shadow-primary-container/30 inline-block text-center">
                         Nhận báo giá
-                    </button>
-<button class="bg-transparent text-white border-2 border-white/60 font-label-bold text-label-bold px-8 py-4 rounded-full hover:bg-white hover:text-primary hover:border-white transition-colors">
+                    </a>
+<a href="services/index.html" class="bg-transparent text-white border-2 border-white/60 font-label-bold text-label-bold px-8 py-4 rounded-full hover:bg-white hover:text-primary hover:border-white transition-colors inline-block text-center">
                         Xem dịch vụ
-                    </button>
+                    </a>
 </div>
 </div>
 </div>
@@ -392,7 +479,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
             <!-- Large Image Box -->
             <div class="lg:col-span-7 relative rounded-2xl overflow-hidden shadow-md group min-h-[380px] fade-in-left">
-                <img src="imgs/overlay.jpg" alt="Tiệc bánh trà Candy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img loading="lazy" src="imgs/overlay.jpg" alt="Tiệc bánh trà Candy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-fixed-dim/90 via-black/30 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 p-8 text-white">
                     <h3 class="font-headline-xl text-white mb-2">5+ Năm Kinh Nghiệm</h3>
@@ -463,10 +550,10 @@
 <h2 class="font-headline-xl text-headline-md md:text-headline-xl text-on-surface mb-4">Dịch vụ nổi bật</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Đa dạng lựa chọn cho mọi loại hình sự kiện, được thiết kế riêng để đáp ứng nhu cầu khắt khe nhất.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 <!-- Service 1 -->
 <div class="group relative rounded-xl overflow-hidden hover-lift bg-surface-container-lowest border border-outline-variant/20 aspect-[4/5] fade-in" style="transition-delay: 0.1s;">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="imgs/tiec-teabreak-ha-noi-candy-10.jpg" alt="Tea Break Công Ty">
+<img loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="imgs/tiec-teabreak-ha-noi-candy-10.jpg" alt="Tea Break Công Ty">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 <div class="absolute bottom-0 left-0 p-6 w-full">
 <h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">Tea Break Công Ty</h3>
@@ -477,7 +564,7 @@
 </div>
 <!-- Service 2 -->
 <div class="group relative rounded-xl overflow-hidden hover-lift bg-surface-container-lowest border border-outline-variant/20 aspect-[4/5] lg:translate-y-8 fade-in" style="transition-delay: 0.2s;">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="imgs/tiec-teabreak-ha-noi-candy-12.jpg" alt="Tea Break Hội Nghị">
+<img loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="imgs/tiec-teabreak-ha-noi-candy-12.jpg" alt="Tea Break Hội Nghị">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 <div class="absolute bottom-0 left-0 p-6 w-full">
 <h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">Tea Break Hội Nghị</h3>
@@ -488,7 +575,7 @@
 </div>
 <!-- Service 3 -->
 <div class="group relative rounded-xl overflow-hidden hover-lift bg-surface-container-lowest border border-outline-variant/20 aspect-[4/5] fade-in" style="transition-delay: 0.3s;">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="imgs/tiec-teabreak-ha-noi-candy-13.jpg" alt="Tea Break Khai Trương">
+<img loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="imgs/tiec-teabreak-ha-noi-candy-13.jpg" alt="Tea Break Khai Trương">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 <div class="absolute bottom-0 left-0 p-6 w-full">
 <h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">Tea Break Khai Trương</h3>
@@ -499,7 +586,7 @@
 </div>
 <!-- Service 4 -->
 <div class="group relative rounded-xl overflow-hidden hover-lift bg-surface-container-lowest border border-outline-variant/20 aspect-[4/5] lg:translate-y-8 fade-in" style="transition-delay: 0.4s;">
-<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="imgs/tiec-teabreak-ha-noi-candy-14.jpg" alt="Tiệc Sinh Nhật">
+<img loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="imgs/tiec-teabreak-ha-noi-candy-14.jpg" alt="Tiệc Sinh Nhật">
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 <div class="absolute bottom-0 left-0 p-6 w-full">
 <h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">Tiệc Sinh Nhật</h3>
@@ -593,9 +680,9 @@
 <div class="max-w-3xl mx-auto px-margin-mobile md:px-gutter text-center relative z-10">
 <h2 class="font-headline-xl text-headline-md md:text-[39px] text-on-surface mb-6">Sẵn sàng nâng tầm sự kiện của bạn?</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Liên hệ với Candy Catering ngay hôm nay để nhận tư vấn và thiết kế menu hoàn toàn miễn phí.</p>
-<button class="bg-primary-container text-on-primary font-label-bold text-label-bold px-10 py-4 rounded-full hover:brightness-95 transition-all shadow-lg shadow-primary-container/20 text-lg">
+<a href="contact/index.html" class="bg-primary-container text-on-primary font-label-bold text-label-bold px-10 py-4 rounded-full hover:brightness-95 transition-all shadow-lg shadow-primary-container/20 text-lg inline-block">
                     Nhận báo giá miễn phí
-                </button>
+                </a>
 </div>
 </section>
 </main>
@@ -605,7 +692,7 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <span class="logo-text">
-                    <img src="imgs/logo.png" alt="Logo Candy" style="height:60px;vertical-align:middle;object-fit:contain;display:inline-block;margin-right:8px;">Candy
+                    <img loading="lazy" src="imgs/logo.png" alt="Logo Candy" style="height:60px;vertical-align:middle;object-fit:contain;display:inline-block;margin-right:8px;">Candy
                 </span>
                 <p>
                     <strong>Tiệc Lưu Động Candy</strong> — Dịch vụ tiệc bánh trà cao cấp tại TP.Hà Nội.
@@ -637,8 +724,8 @@
                 <ul class="footer-links">
                     <li><a href="tel:0969166453"><i class="fas fa-phone"></i> 0969 166 453 / 0978 902 394</a></li>
                     <li><a href="mailto:maihuyentrang1611@gmail.com"><i class="fas fa-envelope"></i> maihuyentrang1611@gmail.com</a></li>
-                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> TP Hà Nội</a></li>
-                    <li><a href="#"><i class="fas fa-clock"></i> 8:00 - 21:00 hàng ngày</a></li>
+                    <li><span><i class="fas fa-map-marker-alt"></i> TP Hà Nội</span></li>
+                    <li><span><i class="fas fa-clock"></i> 8:00 - 21:00 hàng ngày</span></li>
                 </ul>
             </div>
         </div>
