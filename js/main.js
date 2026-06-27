@@ -412,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const category = getCategoryFromId(id);
         return {
             id: id,
-            src: `${prefix}imgs/tiec-teabreak-ha-noi-candy-${id}.jpg`,
+            src: `${prefix}imgs/tiec-teabreak-ha-noi-candy-${id}.webp`,
             alt: `Hình ảnh tiệc teabreak bánh trà sự kiện tại Hà Nội - Candy ${id}`,
             title: getTitleFromCategory(category, id),
             category: category,

@@ -56,7 +56,7 @@
 <meta property="og:url" content="https://tiecluudongcandy.site/pricing/">
 <meta property="og:title" content="Bảng Giá Dịch Vụ Đặt Tiệc Teabreak Trọn Gói | Candy Catering">
 <meta property="og:description" content="Xem bảng giá chi tiết các gói tiệc ngọt, tiệc trà teabreak từ 50.000đ - 75.000đ/suất tại Hà Nội. Candy Catering cam kết chất lượng, setup hoa tươi miễn phí.">
-<meta property="og:image" content="https://tiecluudongcandy.site/imgs/tiec-teabreak-ha-noi-candy-23.jpg">
+<meta property="og:image" content="https://tiecluudongcandy.site/imgs/tiec-teabreak-ha-noi-candy-23.webp">
 <meta property="og:site_name" content="Candy Catering">
 <meta property="og:locale" content="vi_VN">
 
@@ -65,7 +65,7 @@
 <meta name="twitter:url" content="https://tiecluudongcandy.site/pricing/">
 <meta name="twitter:title" content="Bảng Giá Dịch Vụ Đặt Tiệc Teabreak Trọn Gói | Candy Catering">
 <meta name="twitter:description" content="Xem bảng giá chi tiết các gói tiệc ngọt, tiệc trà teabreak từ 50.000đ - 75.000đ/suất tại Hà Nội. Candy Catering cam kết chất lượng, setup hoa tươi miễn phí.">
-<meta name="twitter:image" content="https://tiecluudongcandy.site/imgs/tiec-teabreak-ha-noi-candy-23.jpg">
+<meta name="twitter:image" content="https://tiecluudongcandy.site/imgs/tiec-teabreak-ha-noi-candy-23.webp">
 
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
@@ -253,6 +253,23 @@
         .icon-fill {
             font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+        @keyframes pulse-subtle {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.03); opacity: 0.95; }
+        }
+        .animate-pulse-subtle {
+            animation: pulse-subtle 3s infinite ease-in-out;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .dark .glass-card {
+            background: rgba(48, 48, 49, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
     </style>
 <link href="../css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -302,114 +319,176 @@
         </button>
     </div>
 </header>
-<main>
+<main class="flex flex-col">
 <!-- Hero Section -->
-<section class="relative pt-24 pb-32 overflow-hidden flex items-center justify-center min-h-[500px]">
+<section class="relative pt-28 pb-36 overflow-hidden flex items-center justify-center min-h-[520px] order-2 md:order-1">
 <div class="absolute inset-0 z-0">
 <div class="bg-cover bg-center w-full h-full opacity-20" data-alt="An elegant, softly blurred background of a high-end catering setup with champagne glasses and delicate floral arrangements. The lighting is bright and airy, emphasizing a luxurious, modern aesthetic. The color palette features soft whites, gentle golds, and warm ambient light." style="background-image: url('../imgs/tiec-teabreak-ha-noi-candy-23.jpg')"></div>
-<div class="absolute inset-0 bg-gradient-to-b from-surface/80 to-surface"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/85 via-surface/90 to-surface"></div>
 </div>
 <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
-<span class="inline-block py-1 px-4 rounded-full bg-primary-container text-white font-label-bold text-label-bold mb-6 uppercase tracking-wider">Bảng Giá</span>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6 max-w-3xl mx-auto">Gói Dịch Vụ Tiệc Bánh Trà</h1>
-<p class="font-body-lg text-body-lg text-primary font-bold max-w-2xl mx-auto mb-6">Linh hoạt theo nhu cầu — Báo giá chi tiết khi liên hệ</p>
-<div class="max-w-xl mx-auto space-y-2 text-on-surface-variant font-body-md text-sm md:text-base mb-8 font-semibold">
-    <p>💡 Đã bao gồm dụng cụ tiệc, nhân sự setup.</p>
-    <p>⚠️ Dịch vụ chưa bao gồm: Thuế VAT, phí vận chuyển và bàn kê tiệc.</p>
+<span class="inline-flex py-1.5 px-5 rounded-full bg-gradient-to-r from-primary to-pink-500 text-white font-label-bold text-xs uppercase tracking-widest mb-6 shadow-md shadow-primary/20 animate-pulse-subtle">Bảng Giá</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg bg-gradient-to-r from-[#D81B60] via-[#E91E8C] to-[#8E24AA] bg-clip-text text-transparent mb-6 max-w-3xl mx-auto font-extrabold tracking-tight">Gói Dịch Vụ Tiệc Bánh Trà</h1>
+<p class="font-body-lg text-body-lg text-primary font-bold max-w-2xl mx-auto mb-8 tracking-wide">Linh hoạt theo nhu cầu — Báo giá chi tiết khi liên hệ</p>
+<div class="max-w-2xl md:max-w-3xl mx-auto p-6 rounded-2xl bg-white/70 dark:bg-surface-container/60 backdrop-blur-lg border border-pink-100/50 dark:border-pink-900/10 space-y-4 text-on-surface-variant font-semibold mb-10 shadow-lg shadow-pink-100/20 flex flex-col items-center justify-center">
+    <p class="flex items-start gap-3.5 text-left w-full text-sm md:text-base"><span class="flex-shrink-0 text-xl filter drop-shadow">💡</span> <span class="leading-relaxed">Đã bao gồm dụng cụ tiệc, nhân sự setup.</span></p>
+    <p class="flex items-start gap-3.5 text-left w-full text-sm md:text-base"><span class="flex-shrink-0 text-xl filter drop-shadow">⚠️</span> <span class="leading-relaxed">Dịch vụ chưa bao gồm: Thuế VAT, phí vận chuyển và bàn kê tiệc.</span></p>
 </div>
-<a href="tel:0969166453" class="inline-flex items-center gap-2 bg-primary text-white font-label-bold text-label-bold px-8 py-3.5 rounded-full hover:bg-secondary hover:shadow-lg transition-all scale-95 duration-200 hover:scale-100">
-    <i class="fas fa-phone-alt"></i>
-    <span>📞 Gọi ngay: 0969 166 453</span>
+<a href="tel:0969166453" class="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-pink-600 text-white font-label-bold text-label-bold px-8 py-3.5 rounded-full hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md">
+    <i class="fas fa-phone-alt text-sm"></i>
+    <span>Gọi ngay: 0969 166 453</span>
 </a>
 </div>
 </section>
 <!-- Pricing Cards Section (Tea Break) -->
-<section class="py-section-gap-md md:py-section-gap-lg bg-surface relative z-10 -mt-16">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<section class="py-section-gap-md md:py-section-gap-lg bg-surface relative z-10 mt-0 md:-mt-20 order-1 md:order-2 overflow-hidden">
+<!-- Soft background blobs for premium feel -->
+<div class="absolute top-1/4 left-[-10%] w-[40vw] h-[40vw] bg-gradient-to-tr from-primary/10 to-purple-400/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-1/4 right-[-10%] w-[45vw] h-[45vw] bg-gradient-to-bl from-pink-400/5 to-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8 items-stretch">
 <!-- Package 1: 50k -->
-<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-highest p-8 flex flex-col hover:shadow-md transition-shadow duration-300 relative overflow-hidden group">
+<div class="glass-card bg-white/80 dark:bg-surface-container-lowest/80 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-primary/10 border border-pink-100/60 dark:border-pink-950/20 p-8 md:p-6 lg:p-8 flex flex-col hover:-translate-y-3 transition-all duration-500 ease-out relative overflow-hidden group">
+    <!-- Subtle hover glow circle -->
+    <div class="absolute -right-16 -top-16 w-36 h-36 bg-gradient-to-br from-pink-200/20 to-primary/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-700"></div>
+    
     <div class="relative z-10 flex flex-col h-full">
-        <h2 class="font-headline-md text-headline-md text-primary mb-2">Menu Teabreak 50k</h2>
-        <div class="flex items-baseline gap-2 mb-4 border-b border-surface-container-high pb-4">
-            <span class="font-headline-xl text-headline-xl text-on-surface">50.000đ</span>
-            <span class="font-body-md text-body-md text-on-surface-variant">/ suất</span>
+        <h2 class="font-headline-md text-xl lg:text-2xl text-primary mb-3 flex items-center gap-2.5 font-bold">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary/60"></span>
+            Menu Teabreak 50k
+        </h2>
+        <div class="flex items-baseline gap-1.5 mb-5 border-b border-surface-container-high pb-4">
+            <span class="text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-on-surface via-primary to-on-surface bg-clip-text text-transparent">50.000đ</span>
+            <span class="font-body-md text-body-md text-on-surface-variant/80 font-semibold">/ suất</span>
         </div>
-        <div class="bg-surface-container-low rounded-lg p-3 mb-6 text-xs text-on-surface-variant font-semibold">
-            Bao gồm: Hoa quả (150g) · Bánh (2 bánh) · Đồ uống (2 loại, 200ml)
+        <div class="bg-primary/5 border border-primary/10 rounded-2xl p-4 mb-6 text-xs lg:text-sm text-on-surface-variant font-semibold flex items-start gap-2.5 shadow-sm animate-pulse-subtle">
+            <span class="text-primary text-sm leading-none filter drop-shadow">✨</span>
+            <span class="leading-relaxed">Bao gồm: Hoa quả (150g) · Bánh (2 bánh) · Đồ uống (2 loại, 200ml)</span>
         </div>
         <div class="space-y-4 mb-8 flex-grow">
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍉 Hoa quả</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi, Xoài</p>
+            <!-- Category: Hoa Quả -->
+            <div class="bg-red-50/40 dark:bg-red-950/10 rounded-2xl p-4 border border-red-100/30 dark:border-red-900/10 hover:border-red-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-red-600 dark:text-red-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100/60 dark:bg-red-900/40 text-sm filter drop-shadow-sm">🍉</span>
+                    <span class="font-bold tracking-wider">Hoa quả</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-red-200/50 dark:border-red-800/30 leading-relaxed font-medium">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi, Xoài</p>
             </div>
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍰 Bánh Ngọt</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Bánh Petit Matcha / Hoa quả / Choco, Bông lan cuộn ruốc / Matcha / Choco, Bánh Sukem</p>
+            <!-- Category: Bánh Ngọt -->
+            <div class="bg-pink-50/40 dark:bg-pink-950/10 rounded-2xl p-4 border border-pink-100/30 dark:border-pink-900/10 hover:border-pink-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-pink-600 dark:text-pink-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-pink-100/60 dark:bg-pink-900/40 text-sm filter drop-shadow-sm">🍰</span>
+                    <span class="font-bold tracking-wider">Bánh Ngọt</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-pink-200/50 dark:border-pink-800/30 leading-relaxed font-medium">Bánh Petit Matcha / Hoa quả / Choco, Bông lan cuộn ruốc / Matcha / Choco, Bánh Sukem</p>
             </div>
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">☕ Đồ uống</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Cà phê, Trà đào cam sả / Trà cam chanh dây nhiệt đới, Trà Lipton nóng</p>
+            <!-- Category: Đồ Uống -->
+            <div class="bg-amber-50/40 dark:bg-amber-950/10 rounded-2xl p-4 border border-amber-100/30 dark:border-amber-900/10 hover:border-amber-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-amber-700 dark:text-amber-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-amber-100/60 dark:bg-amber-900/40 text-sm filter drop-shadow-sm">☕</span>
+                    <span class="font-bold tracking-wider">Đồ uống</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-amber-200/50 dark:border-amber-800/30 leading-relaxed font-medium">Cà phê, Trà đào cam sả / Trà cam chanh dây nhiệt đới, Trà Lipton nóng</p>
             </div>
         </div>
-        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 border border-outline text-primary rounded-lg font-label-bold text-label-bold hover:bg-surface-container-low transition-colors mt-auto">Đặt gói này</a>
+        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 border-2 border-primary/40 hover:border-primary text-primary rounded-2xl font-label-bold text-label-bold hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 mt-auto hover:-translate-y-0.5 active:translate-y-0">Đặt gói này</a>
     </div>
 </div>
 <!-- Package 2: 55k (Highlighted) -->
-<div class="bg-surface-container-lowest rounded-xl shadow-lg border-2 border-primary-container p-8 flex flex-col hover:shadow-xl transition-shadow duration-300 relative transform md:-translate-y-4 z-20 overflow-hidden group">
-    <div class="absolute top-0 right-0 bg-primary text-on-primary text-xs font-bold px-4 py-1.5 rounded-bl-lg z-20">PHỔ BIẾN NHẤT</div>
+<div class="glass-card bg-gradient-to-b from-white to-pink-50/30 dark:from-surface-container-lowest/90 dark:to-primary/5 rounded-3xl shadow-2xl border-2 border-primary p-8 md:p-6 lg:p-8 flex flex-col hover:shadow-primary/20 transition-all duration-500 ease-out relative transform md:-translate-y-4 hover:md:-translate-y-6 hover:scale-[1.02] z-20 overflow-hidden group">
+    <!-- Shimmering gradient top bar -->
+    <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-primary via-pink-400 to-primary"></div>
+    <!-- Floating badge -->
+    <div class="absolute top-0 right-0 bg-gradient-to-r from-primary to-pink-600 text-on-primary text-2xs md:text-xs font-bold px-4.5 py-2 rounded-bl-2xl shadow-md tracking-wider uppercase z-20">PHỔ BIẾN NHẤT</div>
+    
     <div class="relative z-10 flex flex-col h-full">
-        <h2 class="font-headline-md text-headline-md text-primary mb-2">Menu Teabreak 55k</h2>
-        <div class="flex items-baseline gap-2 mb-4 border-b border-surface-container-highest pb-4">
-            <span class="font-headline-xl text-headline-xl text-on-surface">55.000đ</span>
-            <span class="font-body-md text-body-md text-on-surface-variant">/ suất</span>
+        <h2 class="font-headline-md text-xl lg:text-2xl text-primary mb-3 flex items-center gap-2.5 font-bold">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+            Menu Teabreak 55k
+        </h2>
+        <div class="flex items-baseline gap-1.5 mb-5 border-b border-surface-container-highest pb-4">
+            <span class="text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-primary via-pink-600 to-primary bg-clip-text text-transparent">55.000đ</span>
+            <span class="font-body-md text-body-md text-on-surface-variant/80 font-semibold">/ suất</span>
         </div>
-        <div class="bg-primary/5 rounded-lg p-3 mb-6 text-xs text-on-surface-variant font-semibold">
-            Bao gồm: Hoa quả (150g) · Bánh (2 bánh) · Đồ uống (200ml)
+        <div class="bg-primary/10 border border-primary/20 rounded-2xl p-4 mb-6 text-xs lg:text-sm text-primary font-bold flex items-start gap-2.5 shadow-sm animate-pulse-subtle">
+            <span class="text-primary text-sm leading-none filter drop-shadow">🔥</span>
+            <span class="leading-relaxed">Bao gồm: Hoa quả (150g) · Bánh (2 bánh) · Đồ uống (200ml)</span>
         </div>
         <div class="space-y-4 mb-8 flex-grow">
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍉 Hoa quả</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi / Xoài</p>
+            <!-- Category: Hoa Quả -->
+            <div class="bg-red-50/40 dark:bg-red-950/10 rounded-2xl p-4 border border-red-100/30 dark:border-red-900/10 hover:border-red-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-red-600 dark:text-red-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100/60 dark:bg-red-900/40 text-sm filter drop-shadow-sm">🍉</span>
+                    <span class="font-bold tracking-wider">Hoa quả</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-red-200/50 dark:border-red-800/30 leading-relaxed font-semibold">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi / Xoài</p>
             </div>
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍰 Bánh Ngọt</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Pettit Matcha / Choco / Hoa quả, Bánh Moka / Tiramisu / Red, Bánh Sukem, Bông lan cuộn ruốc / Matcha / Choco, Bánh sừng bò trứng muối</p>
+            <!-- Category: Bánh Ngọt -->
+            <div class="bg-pink-50/40 dark:bg-pink-950/10 rounded-2xl p-4 border border-pink-100/30 dark:border-pink-900/10 hover:border-pink-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-pink-600 dark:text-pink-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-pink-100/60 dark:bg-pink-900/40 text-sm filter drop-shadow-sm">🍰</span>
+                    <span class="font-bold tracking-wider">Bánh Ngọt</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-pink-200/50 dark:border-pink-800/30 leading-relaxed font-semibold">Pettit Matcha / Choco / Hoa quả, Bánh Moka / Tiramisu / Red, Bánh Sukem, Bông lan cuộn ruốc / Matcha / Choco, Bánh sừng bò trứng muối</p>
             </div>
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">☕ Đồ uống</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Nước hoa quả, Cà phê, Trà đào cam sả / Trà cam chanh, Trà Lipton nóng</p>
+            <!-- Category: Đồ Uống -->
+            <div class="bg-amber-50/40 dark:bg-amber-950/10 rounded-2xl p-4 border border-amber-100/30 dark:border-amber-900/10 hover:border-amber-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-amber-700 dark:text-amber-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-amber-100/60 dark:bg-amber-900/40 text-sm filter drop-shadow-sm">☕</span>
+                    <span class="font-bold tracking-wider">Đồ uống</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-amber-200/50 dark:border-amber-800/30 leading-relaxed font-semibold">Nước hoa quả, Cà phê, Trà đào cam sả / Trà cam chanh, Trà Lipton nóng</p>
             </div>
         </div>
-        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 bg-primary text-white rounded-lg font-label-bold text-label-bold hover:bg-secondary transition-colors mt-auto shadow-md">Đặt gói này</a>
+        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 bg-gradient-to-r from-primary to-pink-600 text-white rounded-2xl font-label-bold text-label-bold hover:from-pink-600 hover:to-primary hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 mt-auto hover:-translate-y-0.5 active:translate-y-0 shadow-md">Đặt gói này</a>
     </div>
 </div>
 <!-- Package 3: 75k -->
-<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-highest p-8 flex flex-col hover:shadow-md transition-shadow duration-300 relative overflow-hidden group">
+<div class="glass-card bg-white/80 dark:bg-surface-container-lowest/80 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-primary/10 border border-pink-100/60 dark:border-pink-950/20 p-8 md:p-6 lg:p-8 flex flex-col hover:-translate-y-3 transition-all duration-500 ease-out relative overflow-hidden group">
+    <!-- Subtle hover glow circle -->
+    <div class="absolute -right-16 -top-16 w-36 h-36 bg-gradient-to-br from-pink-200/20 to-primary/10 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-700"></div>
+    
     <div class="relative z-10 flex flex-col h-full">
-        <h2 class="font-headline-md text-headline-md text-primary mb-2">Menu Teabreak 75k</h2>
-        <div class="flex items-baseline gap-2 mb-4 border-b border-surface-container-high pb-4">
-            <span class="font-headline-xl text-headline-xl text-on-surface">75.000đ</span>
-            <span class="font-body-md text-body-md text-on-surface-variant">/ suất</span>
+        <h2 class="font-headline-md text-xl lg:text-2xl text-primary mb-3 flex items-center gap-2.5 font-bold">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary/60"></span>
+            Menu Teabreak 75k
+        </h2>
+        <div class="flex items-baseline gap-1.5 mb-5 border-b border-surface-container-high pb-4">
+            <span class="text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-on-surface via-primary to-on-surface bg-clip-text text-transparent">75.000đ</span>
+            <span class="font-body-md text-body-md text-on-surface-variant/80 font-semibold">/ suất</span>
         </div>
-        <div class="bg-surface-container-low rounded-lg p-3 mb-6 text-xs text-on-surface-variant font-semibold">
-            Bao gồm: Hoa quả (150g) · Bánh (3 bánh) · Đồ uống (220ml)
+        <div class="bg-primary/5 border border-primary/10 rounded-2xl p-4 mb-6 text-xs lg:text-sm text-on-surface-variant font-semibold flex items-start gap-2.5 shadow-sm animate-pulse-subtle">
+            <span class="text-primary text-sm leading-none filter drop-shadow">✨</span>
+            <span class="leading-relaxed">Bao gồm: Hoa quả (150g) · Bánh (3 bánh) · Đồ uống (220ml)</span>
         </div>
         <div class="space-y-4 mb-8 flex-grow">
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍉 Hoa quả</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi / Xoài, Bưởi da xanh / Táo</p>
+            <!-- Category: Hoa Quả -->
+            <div class="bg-red-50/40 dark:bg-red-950/10 rounded-2xl p-4 border border-red-100/30 dark:border-red-900/10 hover:border-red-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-red-600 dark:text-red-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-red-100/60 dark:bg-red-900/40 text-sm filter drop-shadow-sm">🍉</span>
+                    <span class="font-bold tracking-wider">Hoa quả</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-red-200/50 dark:border-red-800/30 leading-relaxed font-medium">Dưa hấu / Dưa lưới, Dứa chín / Thanh long, Roi / Nho, Ổi / Xoài, Bưởi da xanh / Táo</p>
             </div>
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">🍰 Bánh Ngọt</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Bánh Pettit Hoa quả, Pettit Matcha / Choco, Bánh Mousse, Tiramisu, Red Velvet, Bánh Sukem, Bông lan cuộn, Su sing hoa quả, Bánh sừng bò trứng muối, Bông lan cuộn ruốc</p>
+            <!-- Category: Bánh Ngọt -->
+            <div class="bg-pink-50/40 dark:bg-pink-950/10 rounded-2xl p-4 border border-pink-100/30 dark:border-pink-900/10 hover:border-pink-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-pink-600 dark:text-pink-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-pink-100/60 dark:bg-pink-900/40 text-sm filter drop-shadow-sm">🍰</span>
+                    <span class="font-bold tracking-wider">Bánh Ngọt</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-pink-200/50 dark:border-pink-800/30 leading-relaxed font-medium">Bánh Pettit Hoa quả, Pettit Matcha / Choco, Bánh Mousse, Tiramisu, Red Velvet, Bánh Sukem, Bông lan cuộn, Su sing hoa quả, Bánh sừng bò trứng muối, Bông lan cuộn ruốc</p>
             </div>
-            <div>
-                <span class="font-label-bold text-xs uppercase text-primary block mb-1">☕ Đồ uống</span>
-                <p class="text-sm text-on-surface-variant pl-3 border-l-2 border-primary/30">Nước hoa quả, Cà phê, Trà đào cam sả / Trà cam chanh, Trà Lipton nóng</p>
+            <!-- Category: Đồ Uống -->
+            <div class="bg-amber-50/40 dark:bg-amber-950/10 rounded-2xl p-4 border border-amber-100/30 dark:border-amber-900/10 hover:border-amber-200/50 transition-all duration-300 flex flex-col gap-2">
+                <span class="font-label-bold text-xs uppercase text-amber-700 dark:text-amber-400 flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-amber-100/60 dark:bg-amber-900/40 text-sm filter drop-shadow-sm">☕</span>
+                    <span class="font-bold tracking-wider">Đồ uống</span>
+                </span>
+                <p class="text-sm text-on-surface-variant/90 pl-1 border-l-2 border-amber-200/50 dark:border-amber-800/30 leading-relaxed font-medium">Nước hoa quả, Cà phê, Trà đào cam sả / Trà cam chanh, Trà Lipton nóng</p>
             </div>
         </div>
-        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 border border-outline text-primary rounded-lg font-label-bold text-label-bold hover:bg-surface-container-low transition-colors mt-auto">Đặt gói này</a>
+        <a href="https://zalo.me/0969166453" target="_blank" class="w-full text-center py-4 border-2 border-primary/40 hover:border-primary text-primary rounded-2xl font-label-bold text-label-bold hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 mt-auto hover:-translate-y-0.5 active:translate-y-0">Đặt gói này</a>
     </div>
 </div>
 </div>
