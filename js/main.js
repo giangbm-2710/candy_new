@@ -307,6 +307,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${prefix}imgs/zalo.png" alt="Zalo" class="w-full h-full object-contain rounded-full">
                 <span class="tooltip">Zalo: 0969166453</span>
             </a>
+            <a href="https://ai.tiecluudongcandy.site/" target="_blank" class="float-btn ai-btn">
+                <span class="material-symbols-outlined text-2xl">smart_toy</span>
+                <span class="tooltip">Chat với AI</span>
+            </a>
             <a href="tel:0969166453" class="float-btn phone-btn">
                 <span class="material-symbols-outlined text-2xl">call</span>
                 <span class="tooltip">Gọi ngay: 0969 166 453 / 0978 902 394</span>
