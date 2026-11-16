@@ -161,6 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!drawer) {
             drawer = document.createElement('div');
             drawer.id = 'mobile-menu-drawer';
+            drawer.setAttribute('role', 'dialog');
+            drawer.setAttribute('aria-modal', 'true');
+            drawer.setAttribute('aria-label', 'Điều hướng chính');
+            drawer.inert = true;
             drawer.className = 'fixed inset-y-0 right-0 z-[100] w-64 bg-surface dark:bg-surface-container shadow-2xl transform translate-x-full opacity-0 transition-all duration-300 ease-in-out border-l border-outline-variant/30 flex flex-col p-6';
             
             backdrop = document.createElement('div');
@@ -176,6 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const closeBtn = document.createElement('button');
             closeBtn.className = 'text-secondary hover:text-primary focus:outline-none';
+            closeBtn.setAttribute('aria-label', 'Đóng menu');
             closeBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
             
             drawerHeader.appendChild(drawerTitle);
@@ -214,14 +219,22 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.appendChild(backdrop);
             document.body.appendChild(drawer);
 
+            let menuTrigger;
             const openMenu = () => {
+                menuTrigger = document.activeElement;
+                drawer.inert = false;
+                mobileToggleBtns.forEach(btn => btn.setAttribute('aria-expanded', 'true'));
                 drawer.classList.add('mobile-drawer-open');
                 backdrop.classList.remove('pointer-events-none');
                 backdrop.classList.add('opacity-100');
                 document.body.classList.add('overflow-hidden-mobile');
+                closeBtn.focus();
             };
 
             const closeMenu = () => {
+                drawer.inert = true;
+                mobileToggleBtns.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+                menuTrigger?.focus();
                 drawer.classList.remove('mobile-drawer-open');
                 backdrop.classList.add('pointer-events-none');
                 backdrop.classList.remove('opacity-100');
@@ -235,6 +248,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
 
+            drawer.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeMenu();
+                if (e.key !== 'Tab') return;
+                const items = [...drawer.querySelectorAll('a, button')];
+                const first = items[0], last = items[items.length - 1];
+                if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+                else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && drawer.classList.contains('mobile-drawer-open')) closeMenu();
+            });
+            mobileToggleBtns.forEach(btn => {
+                btn.setAttribute('aria-controls', drawer.id);
+                btn.setAttribute('aria-expanded', 'false');
+            });
             closeBtn.addEventListener('click', closeMenu);
             backdrop.addEventListener('click', closeMenu);
         }
@@ -277,9 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hideLoadingScreen = () => {
         const loader = document.getElementById('loading-screen');
         if (loader) {
-            setTimeout(() => {
-                loader.classList.add('hidden');
-            }, 800);
+            loader.remove();
         }
     };
     hideLoadingScreen();
@@ -304,12 +330,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="tooltip">Messenger</span>
             </a>
             <a href="https://zalo.me/0969166453" target="_blank" class="float-btn zalo-btn">
-                <img src="${prefix}imgs/zalo.png" alt="Zalo" class="w-full h-full object-contain rounded-full">
+                <img src="${prefix}imgs/zalo-small.webp" width="96" height="96" decoding="async" alt="Zalo" class="w-full h-full object-contain rounded-full">
                 <span class="tooltip">Zalo: 0969166453</span>
-            </a>
-            <a href="https://ai.tiecluudongcandy.site/" target="_blank" class="float-btn ai-btn">
-                <span class="material-symbols-outlined text-2xl">smart_toy</span>
-                <span class="tooltip">Chat với AI</span>
             </a>
             <a href="tel:0969166453" class="float-btn phone-btn">
                 <span class="material-symbols-outlined text-2xl">call</span>
@@ -333,9 +355,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.hero-slide');
     let currentSlide = 0;
     if (slides.length > 0) {
-        setInterval(() => {
+        setInterval(async () => {
+            if (document.hidden || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            const nextSlide = (currentSlide + 1) % slides.length;
+            const nextImage = slides[nextSlide].querySelector('img');
+            if (nextImage?.dataset.heroSrc) {
+                nextImage.src = nextImage.dataset.heroSrc;
+                try { await nextImage.decode(); } catch { return; }
+                delete nextImage.dataset.heroSrc;
+            }
+            if (document.hidden) return;
             slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
+            currentSlide = nextSlide;
             slides[currentSlide].classList.add('active');
         }, 5000);
     }
@@ -351,6 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const testimonialCard = document.getElementById('testimonialCard');
     if (testimonialCard) {
         setInterval(() => {
+            if (document.hidden || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
             currentTestimonial = (currentTestimonial + 1) % testimonials.length;
             const t = testimonials[currentTestimonial];
             testimonialCard.style.opacity = '0';
@@ -417,6 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return {
             id: id,
             src: `${prefix}imgs/tiec-teabreak-ha-noi-candy-${id}.webp`,
+            thumbnail: `${prefix}imgs/tiec-teabreak-ha-noi-candy-${id}-640.webp`,
             alt: `Hình ảnh tiệc teabreak bánh trà sự kiện tại Hà Nội - Candy ${id}`,
             title: getTitleFromCategory(category, id),
             category: category,
@@ -476,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="w-full overflow-hidden">
                         <img class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" 
                              src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 4 3'%2F%3E" 
-                             data-src="${img.src}" 
+                             data-src="${img.thumbnail}" decoding="async"
                              alt="${img.alt}">
                     </div>
                     <div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 backdrop-blur-[2px]">
@@ -615,7 +648,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             window.openLightboxBySrc = (src) => {
-                const cleanedSrc = src.substring(src.lastIndexOf('/') + 1);
+                const cleanedSrc = src.substring(src.lastIndexOf('/') + 1).split('?')[0].replace(/-(320|640|1024|1440)\.webp$/, '.webp');
                 const matchedIdx = allImages.findIndex(img => img.src.includes(cleanedSrc));
                 if (matchedIdx >= 0) {
                     window.openLightbox(matchedIdx);

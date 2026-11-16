@@ -1,0 +1,1786 @@
+{
+  "themes": {
+    "404": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "secondary-container": "#e6f6fc",
+            "inverse-surface": "#303031",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "surface-container-high": "#e5f5f8",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#d5edf3",
+            "on-surface": "#17304d",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#07549b",
+            "on-surface-variant": "#45566b",
+            "on-tertiary-container": "#fff2f5",
+            "on-error-container": "#93000a",
+            "outline-variant": "#cce4ee",
+            "on-primary-fixed": "#07549b",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#b9e98a",
+            "on-primary-fixed-variant": "#00743e",
+            "secondary-fixed": "#e1f4fc",
+            "surface-tint": "#009b46",
+            "surface-bright": "#ffffff",
+            "surface-container": "#eff8fc",
+            "on-background": "#17304d",
+            "on-tertiary-fixed": "#25181e",
+            "on-primary-container": "#ffffff",
+            "surface-variant": "#e9f6f7",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#f3f0f1",
+            "tertiary-container": "#7e6b72",
+            "surface": "#ffffff",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "surface-container-low": "#f1f9fc",
+            "primary-fixed": "#e1f5c5",
+            "background": "#ffffff",
+            "secondary": "#07549b",
+            "surface-dim": "#dcd9da",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-fixed-dim": "#b9e98a",
+            "on-secondary-fixed": "#07549b",
+            "on-tertiary-fixed-variant": "#524249",
+            "outline": "#749aa9",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed": "#f4dce4",
+            "on-primary": "#ffffff",
+            "primary": "#009b46",
+            "primary-container": "#00a04b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-gap-lg": "120px",
+            "section-gap-md": "80px",
+            "container-max": "1200px",
+            "stack-sm": "8px",
+            "stack-md": "16px",
+            "margin-mobile": "16px",
+            "gutter": "24px"
+          },
+          "fontFamily": {
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "blog-7-xu-huong-teabreak-van-phong-2024": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "tertiary-fixed": "#f4dce4",
+            "surface-tint": "#009b46",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dcd9da",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "on-error-container": "#93000a",
+            "surface-bright": "#fcf8f9",
+            "inverse-on-surface": "#f3f0f1",
+            "on-secondary-container": "#07549b",
+            "on-primary-container": "#ffffff",
+            "on-background": "#17304d",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f1f9fc",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#524249",
+            "background": "#ffffff",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#7e6b72",
+            "on-tertiary-fixed": "#25181e",
+            "secondary": "#07549b",
+            "inverse-primary": "#b9e98a",
+            "on-error": "#ffffff",
+            "surface-container-high": "#e5f5f8",
+            "surface-container": "#eff8fc",
+            "primary": "#009b46",
+            "secondary-container": "#e6f6fc",
+            "on-primary-fixed": "#07549b",
+            "error": "#ba1a1a",
+            "surface-variant": "#e9f6f7",
+            "surface": "#ffffff",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "primary-fixed-dim": "#b9e98a",
+            "primary-fixed": "#e1f5c5",
+            "on-primary-fixed-variant": "#00743e",
+            "on-secondary-fixed": "#07549b",
+            "inverse-surface": "#303031",
+            "secondary-fixed": "#e1f4fc",
+            "on-surface": "#17304d",
+            "surface-container-highest": "#d5edf3",
+            "on-tertiary-container": "#fff2f5",
+            "primary-container": "#00a04b",
+            "error-container": "#ffdad6",
+            "outline-variant": "#cce4ee",
+            "outline": "#749aa9",
+            "on-surface-variant": "#45566b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "container-max": "1200px",
+            "stack-md": "16px",
+            "section-gap-lg": "120px",
+            "margin-mobile": "16px",
+            "stack-sm": "8px",
+            "gutter": "24px",
+            "section-gap-md": "80px"
+          },
+          "fontFamily": {
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "blog-bi-quyet-len-thuc-don-teabreak": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "tertiary-fixed": "#f4dce4",
+            "surface-tint": "#009b46",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dcd9da",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "on-error-container": "#93000a",
+            "surface-bright": "#fcf8f9",
+            "inverse-on-surface": "#f3f0f1",
+            "on-secondary-container": "#07549b",
+            "on-primary-container": "#ffffff",
+            "on-background": "#17304d",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f1f9fc",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#524249",
+            "background": "#ffffff",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#7e6b72",
+            "on-tertiary-fixed": "#25181e",
+            "secondary": "#07549b",
+            "inverse-primary": "#b9e98a",
+            "on-error": "#ffffff",
+            "surface-container-high": "#e5f5f8",
+            "surface-container": "#eff8fc",
+            "primary": "#009b46",
+            "secondary-container": "#e6f6fc",
+            "on-primary-fixed": "#07549b",
+            "error": "#ba1a1a",
+            "surface-variant": "#e9f6f7",
+            "surface": "#ffffff",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "primary-fixed-dim": "#b9e98a",
+            "primary-fixed": "#e1f5c5",
+            "on-primary-fixed-variant": "#00743e",
+            "on-secondary-fixed": "#07549b",
+            "inverse-surface": "#303031",
+            "secondary-fixed": "#e1f4fc",
+            "on-surface": "#17304d",
+            "surface-container-highest": "#d5edf3",
+            "on-tertiary-container": "#fff2f5",
+            "primary-container": "#00a04b",
+            "error-container": "#ffdad6",
+            "outline-variant": "#cce4ee",
+            "outline": "#749aa9",
+            "on-surface-variant": "#45566b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "container-max": "1200px",
+            "stack-md": "16px",
+            "section-gap-lg": "120px",
+            "margin-mobile": "16px",
+            "stack-sm": "8px",
+            "gutter": "24px",
+            "section-gap-md": "80px"
+          },
+          "fontFamily": {
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "blog-candy-catering-dong-hanh-tech-summit-2024": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "tertiary-fixed": "#f4dce4",
+            "surface-tint": "#009b46",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dcd9da",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "on-error-container": "#93000a",
+            "surface-bright": "#fcf8f9",
+            "inverse-on-surface": "#f3f0f1",
+            "on-secondary-container": "#07549b",
+            "on-primary-container": "#ffffff",
+            "on-background": "#17304d",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f1f9fc",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#524249",
+            "background": "#ffffff",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#7e6b72",
+            "on-tertiary-fixed": "#25181e",
+            "secondary": "#07549b",
+            "inverse-primary": "#b9e98a",
+            "on-error": "#ffffff",
+            "surface-container-high": "#e5f5f8",
+            "surface-container": "#eff8fc",
+            "primary": "#009b46",
+            "secondary-container": "#e6f6fc",
+            "on-primary-fixed": "#07549b",
+            "error": "#ba1a1a",
+            "surface-variant": "#e9f6f7",
+            "surface": "#ffffff",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "primary-fixed-dim": "#b9e98a",
+            "primary-fixed": "#e1f5c5",
+            "on-primary-fixed-variant": "#00743e",
+            "on-secondary-fixed": "#07549b",
+            "inverse-surface": "#303031",
+            "secondary-fixed": "#e1f4fc",
+            "on-surface": "#17304d",
+            "surface-container-highest": "#d5edf3",
+            "on-tertiary-container": "#fff2f5",
+            "primary-container": "#00a04b",
+            "error-container": "#ffdad6",
+            "outline-variant": "#cce4ee",
+            "outline": "#749aa9",
+            "on-surface-variant": "#45566b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "container-max": "1200px",
+            "stack-md": "16px",
+            "section-gap-lg": "120px",
+            "margin-mobile": "16px",
+            "stack-sm": "8px",
+            "gutter": "24px",
+            "section-gap-md": "80px"
+          },
+          "fontFamily": {
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "blog-chi-phi-teabreak-100-nguoi": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "tertiary-fixed": "#f4dce4",
+            "surface-tint": "#009b46",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dcd9da",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "on-error-container": "#93000a",
+            "surface-bright": "#fcf8f9",
+            "inverse-on-surface": "#f3f0f1",
+            "on-secondary-container": "#07549b",
+            "on-primary-container": "#ffffff",
+            "on-background": "#17304d",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f1f9fc",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#524249",
+            "background": "#ffffff",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#7e6b72",
+            "on-tertiary-fixed": "#25181e",
+            "secondary": "#07549b",
+            "inverse-primary": "#b9e98a",
+            "on-error": "#ffffff",
+            "surface-container-high": "#e5f5f8",
+            "surface-container": "#eff8fc",
+            "primary": "#009b46",
+            "secondary-container": "#e6f6fc",
+            "on-primary-fixed": "#07549b",
+            "error": "#ba1a1a",
+            "surface-variant": "#e9f6f7",
+            "surface": "#ffffff",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "primary-fixed-dim": "#b9e98a",
+            "primary-fixed": "#e1f5c5",
+            "on-primary-fixed-variant": "#00743e",
+            "on-secondary-fixed": "#07549b",
+            "inverse-surface": "#303031",
+            "secondary-fixed": "#e1f4fc",
+            "on-surface": "#17304d",
+            "surface-container-highest": "#d5edf3",
+            "on-tertiary-container": "#fff2f5",
+            "primary-container": "#00a04b",
+            "error-container": "#ffdad6",
+            "outline-variant": "#cce4ee",
+            "outline": "#749aa9",
+            "on-surface-variant": "#45566b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "container-max": "1200px",
+            "stack-md": "16px",
+            "section-gap-lg": "120px",
+            "margin-mobile": "16px",
+            "stack-sm": "8px",
+            "gutter": "24px",
+            "section-gap-md": "80px"
+          },
+          "fontFamily": {
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "blog": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "surface-container-high": "#e5f5f8",
+            "secondary": "#07549b",
+            "secondary-container": "#e6f6fc",
+            "secondary-fixed": "#e1f4fc",
+            "on-surface": "#17304d",
+            "on-secondary-container": "#07549b",
+            "primary": "#009b46",
+            "background": "#ffffff",
+            "outline": "#749aa9",
+            "on-tertiary-container": "#fff2f5",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "surface-dim": "#dcd9da",
+            "tertiary-container": "#7e6b72",
+            "on-surface-variant": "#45566b",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#303031",
+            "surface-container-highest": "#d5edf3",
+            "surface-tint": "#009b46",
+            "on-tertiary-fixed-variant": "#524249",
+            "on-primary-fixed": "#07549b",
+            "on-error-container": "#93000a",
+            "on-background": "#17304d",
+            "surface-container-low": "#f1f9fc",
+            "inverse-primary": "#b9e98a",
+            "tertiary-fixed": "#f4dce4",
+            "surface-variant": "#e9f6f7",
+            "on-primary-container": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed": "#25181e",
+            "on-secondary-fixed": "#07549b",
+            "on-error": "#ffffff",
+            "surface": "#ffffff",
+            "primary-container": "#00a04b",
+            "outline-variant": "#cce4ee",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "primary-fixed-dim": "#b9e98a",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#b9e5f5",
+            "primary-fixed": "#e1f5c5",
+            "surface-container": "#eff8fc",
+            "on-primary-fixed-variant": "#00743e",
+            "surface-container-lowest": "#ffffff",
+            "surface-bright": "#fcf8f9",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#f3f0f1"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "stack-md": "16px",
+            "section-gap-md": "80px",
+            "section-gap-lg": "120px",
+            "gutter": "24px",
+            "stack-sm": "8px",
+            "margin-mobile": "16px",
+            "container-max": "1200px"
+          },
+          "fontFamily": {
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ],
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "blog-quy-trinh-setup-teabreak-chuyen-nghiep": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "tertiary-fixed": "#f4dce4",
+            "surface-tint": "#009b46",
+            "on-tertiary": "#ffffff",
+            "surface-dim": "#dcd9da",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "on-error-container": "#93000a",
+            "surface-bright": "#fcf8f9",
+            "inverse-on-surface": "#f3f0f1",
+            "on-secondary-container": "#07549b",
+            "on-primary-container": "#ffffff",
+            "on-background": "#17304d",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f1f9fc",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#524249",
+            "background": "#ffffff",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#7e6b72",
+            "on-tertiary-fixed": "#25181e",
+            "secondary": "#07549b",
+            "inverse-primary": "#b9e98a",
+            "on-error": "#ffffff",
+            "surface-container-high": "#e5f5f8",
+            "surface-container": "#eff8fc",
+            "primary": "#009b46",
+            "secondary-container": "#e6f6fc",
+            "on-primary-fixed": "#07549b",
+            "error": "#ba1a1a",
+            "surface-variant": "#e9f6f7",
+            "surface": "#ffffff",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "primary-fixed-dim": "#b9e98a",
+            "primary-fixed": "#e1f5c5",
+            "on-primary-fixed-variant": "#00743e",
+            "on-secondary-fixed": "#07549b",
+            "inverse-surface": "#303031",
+            "secondary-fixed": "#e1f4fc",
+            "on-surface": "#17304d",
+            "surface-container-highest": "#d5edf3",
+            "on-tertiary-container": "#fff2f5",
+            "primary-container": "#00a04b",
+            "error-container": "#ffdad6",
+            "outline-variant": "#cce4ee",
+            "outline": "#749aa9",
+            "on-surface-variant": "#45566b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "container-max": "1200px",
+            "stack-md": "16px",
+            "section-gap-lg": "120px",
+            "margin-mobile": "16px",
+            "stack-sm": "8px",
+            "gutter": "24px",
+            "section-gap-md": "80px"
+          },
+          "fontFamily": {
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "contact": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "secondary-container": "#e6f6fc",
+            "inverse-surface": "#303031",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "surface-container-high": "#e5f5f8",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#d5edf3",
+            "on-surface": "#17304d",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#07549b",
+            "on-surface-variant": "#45566b",
+            "on-tertiary-container": "#fff2f5",
+            "on-error-container": "#93000a",
+            "outline-variant": "#cce4ee",
+            "on-primary-fixed": "#07549b",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#b9e98a",
+            "on-primary-fixed-variant": "#00743e",
+            "secondary-fixed": "#e1f4fc",
+            "surface-tint": "#009b46",
+            "surface-bright": "#ffffff",
+            "surface-container": "#eff8fc",
+            "on-background": "#17304d",
+            "on-tertiary-fixed": "#25181e",
+            "on-primary-container": "#ffffff",
+            "surface-variant": "#e9f6f7",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#f3f0f1",
+            "tertiary-container": "#7e6b72",
+            "surface": "#ffffff",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "surface-container-low": "#f1f9fc",
+            "primary-fixed": "#e1f5c5",
+            "background": "#ffffff",
+            "secondary": "#07549b",
+            "surface-dim": "#dcd9da",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-fixed-dim": "#b9e98a",
+            "on-secondary-fixed": "#07549b",
+            "on-tertiary-fixed-variant": "#524249",
+            "outline": "#749aa9",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed": "#f4dce4",
+            "on-primary": "#ffffff",
+            "primary": "#009b46",
+            "primary-container": "#00a04b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-gap-lg": "120px",
+            "section-gap-md": "80px",
+            "container-max": "1200px",
+            "stack-sm": "8px",
+            "stack-md": "16px",
+            "margin-mobile": "16px",
+            "gutter": "24px"
+          },
+          "fontFamily": {
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "gallery": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "surface-container-high": "#e5f5f8",
+            "secondary": "#07549b",
+            "secondary-container": "#e6f6fc",
+            "secondary-fixed": "#e1f4fc",
+            "on-surface": "#17304d",
+            "on-secondary-container": "#07549b",
+            "primary": "#009b46",
+            "background": "#ffffff",
+            "outline": "#749aa9",
+            "on-tertiary-container": "#fff2f5",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "surface-dim": "#dcd9da",
+            "tertiary-container": "#7e6b72",
+            "on-surface-variant": "#45566b",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#303031",
+            "surface-container-highest": "#d5edf3",
+            "surface-tint": "#009b46",
+            "on-tertiary-fixed-variant": "#524249",
+            "on-primary-fixed": "#07549b",
+            "on-error-container": "#93000a",
+            "on-background": "#17304d",
+            "surface-container-low": "#f1f9fc",
+            "inverse-primary": "#b9e98a",
+            "tertiary-fixed": "#f4dce4",
+            "surface-variant": "#e9f6f7",
+            "on-primary-container": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed": "#25181e",
+            "on-secondary-fixed": "#07549b",
+            "on-error": "#ffffff",
+            "surface": "#ffffff",
+            "primary-container": "#00a04b",
+            "outline-variant": "#cce4ee",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "primary-fixed-dim": "#b9e98a",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#b9e5f5",
+            "primary-fixed": "#e1f5c5",
+            "surface-container": "#eff8fc",
+            "on-primary-fixed-variant": "#00743e",
+            "surface-container-lowest": "#ffffff",
+            "surface-bright": "#ffffff",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#f3f0f1"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "stack-md": "16px",
+            "section-gap-md": "80px",
+            "section-gap-lg": "120px",
+            "gutter": "24px",
+            "stack-sm": "8px",
+            "margin-mobile": "16px",
+            "container-max": "1200px"
+          },
+          "fontFamily": {
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ],
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ],
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ],
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "home": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "secondary-container": "#e6f6fc",
+            "inverse-surface": "#303031",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "surface-container-high": "#e5f5f8",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#d5edf3",
+            "on-surface": "#17304d",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#07549b",
+            "on-surface-variant": "#45566b",
+            "on-tertiary-container": "#fff2f5",
+            "on-error-container": "#93000a",
+            "outline-variant": "#cce4ee",
+            "on-primary-fixed": "#07549b",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#b9e98a",
+            "on-primary-fixed-variant": "#00743e",
+            "secondary-fixed": "#e1f4fc",
+            "surface-tint": "#009b46",
+            "surface-bright": "#ffffff",
+            "surface-container": "#eff8fc",
+            "on-background": "#17304d",
+            "on-tertiary-fixed": "#25181e",
+            "on-primary-container": "#ffffff",
+            "surface-variant": "#e9f6f7",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#f3f0f1",
+            "tertiary-container": "#7e6b72",
+            "surface": "#ffffff",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "surface-container-low": "#f1f9fc",
+            "primary-fixed": "#e1f5c5",
+            "background": "#ffffff",
+            "secondary": "#07549b",
+            "surface-dim": "#dcd9da",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-fixed-dim": "#b9e98a",
+            "on-secondary-fixed": "#07549b",
+            "on-tertiary-fixed-variant": "#524249",
+            "outline": "#749aa9",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed": "#f4dce4",
+            "on-primary": "#ffffff",
+            "primary": "#009b46",
+            "primary-container": "#00a04b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-gap-lg": "120px",
+            "section-gap-md": "80px",
+            "container-max": "1200px",
+            "stack-sm": "8px",
+            "stack-md": "16px",
+            "margin-mobile": "16px",
+            "gutter": "24px"
+          },
+          "fontFamily": {
+            "cursive": [
+              "Playball",
+              "cursive"
+            ],
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "pricing": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "secondary-container": "#e6f6fc",
+            "inverse-surface": "#303031",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "surface-container-high": "#e5f5f8",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#d5edf3",
+            "on-surface": "#17304d",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#07549b",
+            "on-surface-variant": "#45566b",
+            "on-tertiary-container": "#fff2f5",
+            "on-error-container": "#93000a",
+            "outline-variant": "#cce4ee",
+            "on-primary-fixed": "#07549b",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#b9e98a",
+            "on-primary-fixed-variant": "#00743e",
+            "secondary-fixed": "#e1f4fc",
+            "surface-tint": "#009b46",
+            "surface-bright": "#ffffff",
+            "surface-container": "#eff8fc",
+            "on-background": "#17304d",
+            "on-tertiary-fixed": "#25181e",
+            "on-primary-container": "#ffffff",
+            "surface-variant": "#e9f6f7",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#f3f0f1",
+            "tertiary-container": "#7e6b72",
+            "surface": "#ffffff",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "surface-container-low": "#f1f9fc",
+            "primary-fixed": "#e1f5c5",
+            "background": "#ffffff",
+            "secondary": "#07549b",
+            "surface-dim": "#dcd9da",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-fixed-dim": "#b9e98a",
+            "on-secondary-fixed": "#07549b",
+            "on-tertiary-fixed-variant": "#524249",
+            "outline": "#749aa9",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed": "#f4dce4",
+            "on-primary": "#ffffff",
+            "primary": "#009b46",
+            "primary-container": "#00a04b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-gap-lg": "120px",
+            "section-gap-md": "80px",
+            "container-max": "1200px",
+            "stack-sm": "8px",
+            "stack-md": "16px",
+            "margin-mobile": "16px",
+            "gutter": "24px"
+          },
+          "fontFamily": {
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "services": {
+      "darkMode": "class",
+      "theme": {
+        "extend": {
+          "colors": {
+            "secondary-container": "#e6f6fc",
+            "inverse-surface": "#303031",
+            "on-secondary-fixed-variant": "#07549b",
+            "tertiary": "#64535a",
+            "surface-container-high": "#e5f5f8",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#d5edf3",
+            "on-surface": "#17304d",
+            "error-container": "#ffdad6",
+            "on-secondary-container": "#07549b",
+            "on-surface-variant": "#45566b",
+            "on-tertiary-container": "#fff2f5",
+            "on-error-container": "#93000a",
+            "outline-variant": "#cce4ee",
+            "on-primary-fixed": "#07549b",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#b9e98a",
+            "on-primary-fixed-variant": "#00743e",
+            "secondary-fixed": "#e1f4fc",
+            "surface-tint": "#009b46",
+            "surface-bright": "#ffffff",
+            "surface-container": "#eff8fc",
+            "on-background": "#17304d",
+            "on-tertiary-fixed": "#25181e",
+            "on-primary-container": "#ffffff",
+            "surface-variant": "#e9f6f7",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#f3f0f1",
+            "tertiary-container": "#7e6b72",
+            "surface": "#ffffff",
+            "tertiary-fixed-dim": "#d7c1c8",
+            "surface-container-low": "#f1f9fc",
+            "primary-fixed": "#e1f5c5",
+            "background": "#ffffff",
+            "secondary": "#07549b",
+            "surface-dim": "#dcd9da",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-fixed-dim": "#b9e98a",
+            "on-secondary-fixed": "#07549b",
+            "on-tertiary-fixed-variant": "#524249",
+            "outline": "#749aa9",
+            "secondary-fixed-dim": "#b9e5f5",
+            "tertiary-fixed": "#f4dce4",
+            "on-primary": "#ffffff",
+            "primary": "#009b46",
+            "primary-container": "#00a04b"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "section-gap-lg": "120px",
+            "section-gap-md": "80px",
+            "container-max": "1200px",
+            "stack-sm": "8px",
+            "stack-md": "16px",
+            "margin-mobile": "16px",
+            "gutter": "24px"
+          },
+          "fontFamily": {
+            "display-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-lg": [
+              "Be Vietnam Pro"
+            ],
+            "body-md": [
+              "Be Vietnam Pro"
+            ],
+            "headline-xl": [
+              "Be Vietnam Pro"
+            ],
+            "headline-md": [
+              "Be Vietnam Pro"
+            ],
+            "label-bold": [
+              "Manrope"
+            ],
+            "display-lg-mobile": [
+              "Be Vietnam Pro"
+            ]
+          },
+          "fontSize": {
+            "display-lg": [
+              "56px",
+              {
+                "lineHeight": "1.1",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "1.6",
+                "fontWeight": "400"
+              }
+            ],
+            "headline-xl": [
+              "40px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "700"
+              }
+            ],
+            "headline-md": [
+              "24px",
+              {
+                "lineHeight": "1.3",
+                "fontWeight": "700"
+              }
+            ],
+            "label-bold": [
+              "14px",
+              {
+                "lineHeight": "1.0",
+                "letterSpacing": "0.05em",
+                "fontWeight": "700"
+              }
+            ],
+            "display-lg-mobile": [
+              "36px",
+              {
+                "lineHeight": "1.2",
+                "fontWeight": "800"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "routes": {
+    "404.html": "404",
+    "blog/7-xu-huong-teabreak-van-phong-2024/index.html": "blog-7-xu-huong-teabreak-van-phong-2024",
+    "blog/bi-quyet-len-thuc-don-teabreak/index.html": "blog-bi-quyet-len-thuc-don-teabreak",
+    "blog/candy-catering-dong-hanh-tech-summit-2024/index.html": "blog-candy-catering-dong-hanh-tech-summit-2024",
+    "blog/chi-phi-teabreak-100-nguoi/index.html": "blog-chi-phi-teabreak-100-nguoi",
+    "blog/index.html": "blog",
+    "blog/quy-trinh-setup-teabreak-chuyen-nghiep/index.html": "blog-quy-trinh-setup-teabreak-chuyen-nghiep",
+    "contact/index.html": "contact",
+    "gallery/index.html": "gallery",
+    "index.html": "home",
+    "pricing/index.html": "pricing",
+    "services/index.html": "services"
+  }
+}

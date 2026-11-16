@@ -154,14 +154,7 @@ html {
     background: #0068ff;
     padding: 8px;
 }
-.float-btn.ai-btn {
-    background: linear-gradient(135deg, #8B5CF6, #EC4899);
-    animation: ai-glow 3s infinite ease-in-out;
-}
-.float-btn.ai-btn:hover {
-    animation: none;
-    box-shadow: 0 8px 20px rgba(139, 92, 246, 0.6);
-}
+
 .float-btn.messenger-btn {
     background: linear-gradient(135deg, #006aff, #00b2ff);
 }
@@ -404,12 +397,5 @@ html {
     }
 }
 
-@keyframes ai-glow {
-    0%, 100% {
-        box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3), 0 0 0 0 rgba(236, 72, 153, 0.2);
-    }
-    50% {
-        box-shadow: 0 8px 24px rgba(139, 92, 246, 0.5), 0 0 0 8px rgba(236, 72, 153, 0);
-    }
-}
+
 
